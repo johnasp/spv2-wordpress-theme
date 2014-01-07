@@ -48,7 +48,6 @@ add_shortcode('adsense', 'showads');
  
 //Insert ads after second paragraph of single post content.
 
-
 $HTTP = "http://";
 $URL = $_SERVER['SERVER_NAME'];
 $Path = $_SERVER['REQUEST_URI'];
@@ -98,6 +97,18 @@ function prefix_insert_after_paragraph( $insertion, $paragraph_id, $content ) {
 	}
 	
 	return implode( '', $paragraphs );
+}
+
+// CATEGORY AS SLUGS. (used to add to classes) 
+function the_category_unlinked($separator = ' ') {
+    $categories = (array) get_the_category();
+    
+    $thelist = '';
+    foreach($categories as $category) {    // concate
+        $thelist .= $separator . $category->category_nicename;
+    }
+    
+    echo $thelist;
 }
 
 ?>

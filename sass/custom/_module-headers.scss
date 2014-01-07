@@ -1,53 +1,5 @@
-/** MODULE HEADER PSEDUDO ELEMENTS **/
-.podcast {
-	&:before { 
-		@include module-header-before($podcast);
-	}
-	&:after {
-		content: "Podcasts";
-		@include module-header-after;
-	}
-}
+/** NO LONGER USED.  SAVED FOR FUTURE REFERENCE THO **/
 
-.tactics {
-	&:before { 
-		@include module-header-before($post);
-	}
-	&:after {
-		content: "Tactical Insights";
-		@include module-header-after;
-	}
-}
-
-.coverage {
-	&:before { 
-		@include module-header-before($post);
-	}
-	&:after {
-		content: "Match Coverage";
-		@include module-header-after;
-	}
-}
-
-.opinion {
-	&:before { 
-		@include module-header-before($post);
-	}
-	&:after {
-		content: "Opinion";
-		@include module-header-after;
-	}
-}
-
-.stats {
-	&:before { 
-		@include module-header-before($post);
-	}
-	&:after {
-		content: "Statistical Analysis";
-		@include module-header-after;
-	}
-}
 .partner {
 	background: #000;
 	&:before { 

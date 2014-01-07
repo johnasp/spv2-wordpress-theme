@@ -38,27 +38,36 @@ article {
 			background: $hover;
 		}
 	}
-	div.post-meta {
-		color: white;
-		position: absolute;
-		top: -1px;
-		right: $padding;
-		padding-left: $padding;
-		text-transform: uppercase!important;
-		font-size: 12px;
-		@include module-header-before($podcast);
-		a { 
-			text-decoration: none;
-			color: white;
-			&:hover { text-decoration: underline; }
-		}
-			span {
-			float: right;
-			padding-right: $padding;
-		}
-	}
-
 }
+div.post-meta {
+	color: white;
+	position: absolute;
+	top: -1px;
+	right: $padding;
+	padding-left: $padding;
+	text-transform: uppercase!important;
+	font-size: 12px;
+	background: $orange;
+	display: block;
+	position: absolute;
+	width: 100%;
+	height: 17px;
+	top: 0;
+	left: 0;
+	a { 
+		text-decoration: none;
+		color: white;
+		&:hover { text-decoration: underline; }
+	}
+	span {
+		float: right;
+		padding-right: $padding;
+	}
+}
+article.blog div.post-meta {
+	background: adjust-hue($orange, 343deg);
+}
+
 
 .post span {
 	position: absolute;

@@ -15,12 +15,22 @@
 <?php while (have_posts()) : the_post(); ?>
 <?php $count++; ?>
 <?php if ($count == 1) : ?>
-          
-<article class="module blog">  
-   <div class="post-meta" aria-hidden="true"><?php the_date(); ?><span data-icon="G"><?php the_category(', '); ?> </span></div>
+
+<?php 
+  $cat = get_the_category(); 
+  $cat = $cat[0]; 
+  $myCat = $cat->cat_name; 
+?>        
+
+<article class="module <?php the_category_unlinked(''); ?>">
+   <div class="post-meta" aria-hidden="true"><?php the_date(); ?>
+      <span data-icon="<?php if ($myCat == "Blog") { echo "$"; } else { echo "G"; } ?>"><?php the_category(', '); ?> </span>
+   </div>
     <header> 
-      <a class="latest" href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+      <a class="latest" href="<?php the_permalink(); ?>"><?php the_title(); ?> </a>
+
       <?php the_post_thumbnail('medium');?> 
+
     <?php if ( is_home() || is_search() ) : // Only display excerpts for archives and search. ?>  
         <strong><?php the_excerpt(); ?></strong>  
       <?php else : ?>  
