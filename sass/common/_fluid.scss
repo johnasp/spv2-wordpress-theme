@@ -1,0 +1,5 @@
+img {
+		max-width: 100%;
+		display: block; /* Set to block element to blitz inline element margin whitespace */
+		height: auto !important; /*overide image height if set in HTML*/
+}

@@ -1,0 +1,41 @@
+@mixin breakpoint($point) {
+  @if $point == 320 {
+    @media (min-width: 0) { @content; }
+  }
+  @else if $point == mob {
+    @media (min-width: 320px) and (max-width: 768px)  { @content; }
+  }
+	 @else if $point == 395 {
+    @media (min-width: 395px) { @content; }
+  }
+  @else if $point == 480 {
+    @media (min-width: 480px) { @content; }
+  }
+  @else if $point == 580 {
+    @media (min-width: 580px) { @content; }
+  }	
+  @else if $point == 768 {
+    @media (min-width: 768px) { @content; }
+  }
+	@else if $point == mid {
+    @media (min-width: 768px) and (max-width: 1200px) { @content; }
+  }
+	@else if $point == midish {
+    @media (min-width: 900px) and (max-width: 1200px) { @content; }
+  }	
+  @else if $point == 1024 {
+    @media (min-width: 1024px)  { @content; }
+  }
+  @else if $point == 1100 {
+    @media (min-width: 1100px)  { @content; }
+  }
+  @else if $point == 1540 {
+    @media (min-width: 1540px)  { @content; }
+  }
+  @else if $point == 1920 {
+    @media (min-width: 1920px)  { @content; }
+  }
+  @else if $point == 2380 {
+    @media (min-width: 2380px)  { @content; }
+  }
+}

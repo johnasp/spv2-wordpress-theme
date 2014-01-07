@@ -1,0 +1,255 @@
+.page {
+	padding: 0 $padding $padding $padding;
+	background:#FFF;
+	margin-bottom: $padding;
+}
+#single {
+	padding-top: $padding*1.8;
+	header {
+		position: relative;
+	}
+}
+.social-share {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	background: white;
+	padding: 4px 4px 0 0;
+	a {
+		text-decoration: none;
+	}
+}
+
+.blog {
+	position: relative;
+	padding-top: $padding;
+	.powerpress_player {
+		border-top: 1px solid white;
+		background: darken($lightGrey, 10%);
+		bottom: 0;
+		padding: 8px 8px 4px 8px;
+		width: 100%;
+		position: relative;
+		top: 50%;
+	}
+	.wp-post-image {
+		width: 100%;
+	}
+	.related-posts img {
+		width: auto;
+	}
+	.powerpress-mejs-audio {
+		margin: 0 auto;
+		width: 100%;
+	}
+	.powerpress_links { 
+		@include font-size(1.2);
+		color: $darkGrey;
+		background: darken($lightGrey, 10%);
+		margin: 0;
+		padding: 4px 8px;
+		text-transform: uppercase;
+		a { 
+			color: $darkGrey;
+			&:hover {color: $hover;}
+			text-decoration: bold;
+		}
+	}
+	.sub-nav {
+		padding:0;
+		background: none;
+		font-size:0;
+	a {
+		padding: 5px;
+		background: $midGrey;
+		background: pink!important;
+		margin: 1px;
+		@include font-size(1.2);
+		text-decoration: none;
+		color: #e1e1e1;
+		display: block;
+		}
+	}
+
+	.blogSocial {	
+			.icons div {
+				width:18%; 
+				display:inline-block; 
+				text-align:center;
+			}
+			.icons a {
+				display: inline-block;
+				color: $midGrey;
+				@include font-size (1.8);
+				font-weight: bold;
+				position: relative;
+				text-transform: uppercase;	
+				text-decoration:none;
+				@include transition(color 0.3s linear);
+					&:hover, &:focus {@include transition(color 0.05s ease);}
+					&.itunes {
+							&:hover, &:focus {
+								color: $copy;	  
+						}
+					}
+					&.rss {
+							&:hover, &:focus {
+							color: $rss;			
+						}
+					}
+					&.twitter {
+							&:hover, &:focus {
+							color: $twitter;
+						}		
+					}
+					&.facebook {
+							&:hover, &:focus {
+							color: $facebook;
+						}	
+					}
+					&.google {
+							&:hover, &:focus {
+							color: $google;
+						}	
+					}
+				span {
+						font-weight: normal;
+						@include font-size (4.2);
+						display: block;
+				}				
+			}
+		}
+	.match {
+		figure {
+			padding: 8px;
+			background: $lightOrange;
+			border: 1px solid darken($lightOrange,5%);
+			text-align: center;
+			display: inline-block;
+			margin-top: $padding;
+			figcaption {
+				font-weight: bold;
+				color: $darkOrange;
+				font-style: italic;
+				@include font-size(1.4);
+				padding: $padding 0 0 0;	
+			}
+		}
+	}
+	
+		header {
+			position: relative;
+			margin-top: $gutter;
+		}		
+		h1, a.latest {
+			@include font-stack-headers;
+			text-decoration: none;
+			@include font-size(1.6);
+			color: #fff;
+		  	background: rgba($orange, 0.8);	
+			padding: 6px;
+			position: absolute;
+			display: inline-block;		
+			text-transform: capitalize;
+			line-height:1em;
+			@include transition (background, 0.2s ease!important);
+			@include breakpoint(480) {
+				@include font-size(2.4);
+			}
+			@include breakpoint(768) {
+				@include font-size(3.0);
+			}		
+		}
+		h3 {
+			span {
+				font-weight:normal;
+				margin-left:$padding/2;
+					&[data-icon="T"] {
+						@include font-size($blogH3+1.5);
+					}
+			}
+		}
+		h4 {
+			@include font-size (2.2);
+		}
+		img {
+			margin-bottom:0;
+		}
+		.meta {
+			margin-top: $gutter*3;
+			font-weight: bold;
+			color: $midGrey;
+			padding:4px 0 4px 8px;			
+			@include font-size(1.6);
+			@include breakpoint (480) {@include font-size(1.2);}
+			@include breakpoint (1024) {@include font-size(1.6);}
+			time {
+					margin-right: $padding;
+				}
+				span {
+					margin-right: $padding/3;
+					font-weight: normal;
+				}
+				a {
+					margin-right: $padding;
+					color: inherit;
+					border-bottom: none;
+					text-decoration:none;
+					font-size:inherit;
+				}
+				a:hover {
+					text-decoration:underline;
+				}
+		}	
+}
+.filter-nav {
+	padding-top: 0;
+	padding-bottom: $padding;
+	a {
+		display: block;
+		text-align:center;
+		&.show-hide-nav {
+			background: lighten($midGrey,5%);
+			color: #FFF; 	
+			@include font-size(2.4);
+			padding: 0;
+		}
+	}
+	a:not(.show-hide-nav) { /*Hide all filter buttons except control button*/ 
+		display: none; 
+		body.show-filter-nav & { /*Show all filter buttons*/
+			display: inline-block;
+		}
+	}
+}
+#related-posts {
+	figure {
+		background: lighten(#e1e1e1,8%);
+		width: 45%;
+		@include breakpoint(480) {width: 30%;}
+		display: inline-block;
+		vertical-align: top;
+		margin-right: $padding/2;
+		margin-bottom: $padding/2;
+		position: relative;
+	}
+	img {
+		width: 100%;
+		position: relative;
+	}
+	figcaption {
+		padding: 6px;
+		@include font-size(1.4);
+		background: rgba($orange, 0.9s);
+		color: white;
+		position: absolute;
+		top: 0;
+		font-weight: bold;
+		&:hover {background: $hover;}
+		@include transition (background, 0.2s ease!important);
+	}
+	a {
+		@include font-size(1.4);
+	}
+}
+

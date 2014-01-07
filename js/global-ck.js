@@ -1,0 +1,1 @@
+$("section").fitVids();$("#hide").click(function(){$("#listen").fadeOut()});$("#show-hide-nav").on("click",function(){$("body").toggleClass("show-filter-nav")});

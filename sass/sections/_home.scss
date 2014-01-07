@@ -1,0 +1,238 @@
+body {
+	background: url(../images/bubbles.jpg) top;
+	overflow-x: hidden; /*horiz scroll remove*/
+	a.latest {
+		background: $link;
+		&:hover {background: $hover;}
+	}
+	&.wp-page h1 {
+		position: static;
+		margin-bottom: 0;
+	}
+}  
+.page-wrap {
+	// background: darken(rgba(#999, 0.7),25%);
+	width: $width;
+	margin: 0 auto $padding auto;
+	position: relative;
+	@include transition(width 0.3s ease);
+	@include breakpoint (768) {
+		width: $widthMid;
+	}
+}
+footer {
+	clear:both;
+}
+
+article {
+	border-bottom: 1px solid darken($midGrey,20%); 
+	a.more {
+		background: darken($lightGrey, 40%);
+		border-bottom: 1px solid $darkGrey;
+		padding: 3px 1px 3px 6px;
+		border-radius: 3px;
+		color: #fff;
+		text-decoration: none;
+		text-transform: uppercase;
+		&:hover, &:focus {
+			background: $hover;
+		}
+	}
+	div.post-meta {
+		color: white;
+		position: absolute;
+		top: -1px;
+		right: $padding;
+		padding-left: $padding;
+		text-transform: uppercase!important;
+		font-size: 12px;
+		@include module-header-before($podcast);
+		a { 
+			text-decoration: none;
+			color: white;
+			&:hover { text-decoration: underline; }
+		}
+			span {
+			float: right;
+			padding-right: $padding;
+		}
+	}
+
+}
+
+.post span {
+	position: absolute;
+	top: -1px;
+	right: $padding;
+	color: #FFF;
+	font-size: 14px;
+}
+
+.home-ad-block {
+	padding: $padding*2 0 $padding $padding;
+	@include breakpoint(480) {
+		padding: $padding*2 $padding $padding $padding; 
+	}
+}
+.padding-off {
+	padding: 0;
+}
+#homepage-small-ad {
+	@include breakpoint(1024) {
+		display: none;
+	}
+}
+#homepage-big-ad {
+	display: none;
+	@include breakpoint(1024) {
+		display: block;
+	}
+}
+.listen-now {
+	color: #FFF;
+	background: rgba($orange, 0.6);
+	display: inline-block;
+	text-decoration: none;
+	position: absolute;
+	top: 13%;
+	@include breakpoint(480) {
+		top: 20%;
+	}
+	@include breakpoint(1024) {
+		top: 25%;
+	}
+	left: 45%;
+	padding: 6px;
+	font-weight: normal;
+	@include transition(background 0.5s ease);
+	&:hover, &:active {
+		color: #fff;
+		background: rgba($link, 0.7); 
+		@include transition(background 0.3s ease);
+	}
+	span {
+		margin-left: 6px;
+		@include font-size(2.0);
+		@include breakpoint(480) {
+			@include font-size(4.0);
+		}
+		@include breakpoint(1024) {
+			@include font-size(5.0);
+		}
+	}
+}
+#subscribe-home {
+	margin: 10px 0 20px 0;
+	background: rgba($orange,0.2);
+	a.apple {
+		background: $apple;
+	}
+	.rss {
+		background: $rss;
+	}
+	.facebook {
+		background: $facebook;
+	}	
+	.twitter {
+		background: $twitter;
+	}	
+	@include breakpoint(768) {display: none;}
+	p { 
+		background: black;
+		color: white;
+		position: relative;
+		margin: 0 0 $gutter 0;
+		text-transform: uppercase;
+		padding: 4px 0;
+		@include font-size(1.4) ;
+	}
+	a {margin-bottom: 12px;}
+	text-align: center;
+	span:first-child { margin-bottom: 6px;}
+	a {
+		display: inline-block;
+		color: #FFF;
+		padding: $padding/2;
+		width: 46%;
+		@include font-size(1.6);
+		@include breakpoint(480) {@include font-size(1.8);}
+		text-decoration: none;
+		margin-right: 2%;
+		text-transform: uppercase;
+		&:hover, &:focus {background: $hover;}
+		span {
+			font-weight: normal;
+			margin: 3px 4px 0 0;
+	   		 @include font-size(2.0);
+			@include breakpoint(480) {@include font-size(2.6);}
+		}
+	}
+
+}
+.white-bg {
+	background: #FFF;
+}
+
+.sub-nav {
+	background: none;
+	padding: $padding/2 0;
+	font-size: 0;
+	a {
+		background: $lightGrey;
+		color: $darkGrey;
+		padding: $padding/2;
+		@include font-size(1.2);
+		text-decoration: none;
+		text-transform: uppercase;
+		margin: 0 2px 2px 0;
+		&:first-child {
+			margin-bottom: 2px;
+		}
+		&:last-child {
+			margin-right: 0;
+		}
+		&:hover, &:focus {
+			background: $hover;
+		}
+	}
+}
+#pagination {
+	text-align: center;
+	background: none;
+	font-weight: bold;
+	padding-top:0;
+	p {
+		color: #fff;
+		@include font-size(2.8);
+		@include font-stack-headers();
+		margin-top:0;
+		padding-top:0;
+	}
+	a, span { 
+		background: $lightGrey;
+		padding: $padding/2;
+		text-decoration: none;
+		line-height: 41px;
+	}
+	a:hover {
+		background: $hover; 
+		color: white;
+
+	}
+}
+button#hide {
+	color: #FFF;
+	@include font-size(1.2);
+	position: absolute;
+	top: 0px;
+	right: 20px;
+	background: $active;
+	border: none;
+	text-transform: uppercase;
+	span {
+		@include font-size (2.4);
+		padding: 0;
+		margin-top: 3px;
+	} 
+}
+

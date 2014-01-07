@@ -1,0 +1,132 @@
+body {
+	@include font-stack-body();
+}
+ul {
+	padding-left:20px;
+}
+p, li, blockquote {
+	line-height:1.3em;
+	@include font-size(1.6)
+}
+blockquote {
+	padding-left:70px!important;
+}
+li {
+	margin-bottom:6px;
+}
+h1,h2,h3,h4,h5,h6 {
+	@include font-stack-headers;
+	margin: $padding 0 $padding 0;
+	line-height: 1em;
+}
+h1 { margin-top:0;}
+h2 {} 
+h3 {
+	@include font-size($blogH3);
+	@include breakpoint(1024) {@include font-size($blogH3+1);}
+	margin-top: $padding*2;
+	color: lighten($darkOrange, 10%);
+}
+h4 {
+	@include font-size (2.2);
+}
+a {
+	font-size: inherit;
+	color: $link;
+	text-decoration: underline;
+		@include transition (background, 0.5s ease!important);
+		@include transition (color, 0.5s ease!important);
+	&:focus {
+		outline: thin dotted;
+	}
+	&:hover, &:active {
+		outline: 0;
+		color: $hover;
+		@include transition (background, 0.2s ease!important);
+		@include transition (color, 0.1s ease!important);
+	}
+	&:active {
+		color: $active;
+	}
+}
+blockquote {
+	position: relative;
+	margin: 30px 0;
+	background: $lightOrange;
+	padding: $padding $padding $padding $padding*4;
+	@include breakpoint(1024) {padding-left: $padding*5;}
+	color: $darkOrange;
+	line-height:1.4em;
+	border-radius:8px;
+	font-style: italic;
+		span {
+			color: $lightOrange;
+			@include font-size(5.2);
+			@include arrow-up(40px);
+			position: absolute;
+			top: -22px;
+				&[data-icon="B"] {
+					font-style: normal;
+					color: rgba($darkOrange,0.2);
+					top: $padding+4;
+					@include font-size(2.6);
+					@include breakpoint(1024) {@include font-size(3.6); top: $padding+8;}
+					left: $padding;
+				}
+		}
+}
+.callout {
+	background: lighten($orange, 40%);
+	border: 1px solid $orange;
+	padding: $padding;
+	display: inline-block;
+	margin:  0;
+	a {
+		@include font-size(2.0);
+		
+		}
+}
+abbr[title] {
+    border-bottom: 1px dotted;
+}
+b, strong {
+    font-weight: bold;
+}
+dfn {
+    font-style: italic;
+}
+mark {
+    background: #ff0;
+    color: #000;
+}
+code,
+kbd,
+pre,
+samp {
+    font-family: monospace, serif;
+    font-size: 1em;
+}
+pre {
+    white-space: pre;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+q {
+    quotes: "\201C" "\201D" "\2018" "\2019";
+}
+small {
+    font-size: 80%;
+}
+sub,
+sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+}
+sup {
+    top: -0.5em;
+}
+sub {
+    bottom: -0.25em;
+}

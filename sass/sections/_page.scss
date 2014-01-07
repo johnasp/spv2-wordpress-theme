@@ -1,0 +1,11 @@
+body.wp-page {
+	header {
+		position: relative;
+		margin-top: 0;
+		padding-top: 0;
+		h1 {
+			position: absolute;
+			top: 0;
+		}
+	}
+} 

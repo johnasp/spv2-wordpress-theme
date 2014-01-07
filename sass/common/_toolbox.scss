@@ -1,0 +1,38 @@
+/* CLEAR FIX.  Just add .group to parent off floats you want to clear */
+.group:before,
+.group:after {
+    content: "";
+    display: table;
+} 
+.group:after {
+    clear: both;
+}
+.group {
+    zoom: 1; /* For IE 6/7 (trigger hasLayout) */
+}
+
+/* FONT ICONS - http://css-tricks.com/examples/IconFont/ */
+
+[data-icon]:after {
+  @include font-stack-icons;
+  content: attr(data-icon);
+  speak: none; /* Not to be trusted, but hey. */
+}
+.before[data-icon]:before {
+  @include font-stack-icons;
+  content: "";
+  speak: none; /* Not to be trusted, but hey. */
+}
+
+.icon-alone {
+  display: inline-block; /* Chrome 19 was weird with clickability without this */
+}
+
+.screen-reader-text { /* Reusable, toolbox kind of class */
+  position: absolute;
+  top: -9999px;
+  left: -9999px;
+}
+
+
+

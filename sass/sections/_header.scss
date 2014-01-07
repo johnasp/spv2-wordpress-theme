@@ -1,0 +1,96 @@
+header.top-banner {
+	width: $width;
+	margin: 0 auto;
+	@include breakpoint(768) {
+		width: $widthMid;
+	} 
+	@include breakpoint(1024) {
+		width: $widthMid;
+	} 
+	#logo {
+		float: left;
+		width: 60%;
+		@include breakpoint (1024) {
+			width: 45%;
+		}
+	}
+	#box-ad {
+		float: right;
+		padding-right: $gutter;
+			@include breakpoint (1024) {
+				display: none;
+		}
+	}
+	#banner-ad {
+		display:none;
+		@include breakpoint (1024) {
+			display: inline;
+			float: right;
+			width: 30%;
+			padding-right:0;
+		}
+		@include breakpoint (1024) {
+			width: 55%;
+		}
+	}
+	img {
+		float: right;
+		margin-top:12px;
+		margin-bottom:12px;
+	}
+	p  {
+		color: #fff;
+		@include font-stack-headers;
+		text-transform: uppercase;
+		text-shadow: 1px 1px 1px #000;
+		margin: 8px 0 0 0;
+		padding-left: $gutter;
+		font-weight: normal;
+		display: inline-block;
+		@include font-size(3.8);
+		line-height:0.9em;
+		@include breakpoint(580) {
+			@include font-size(4.4);
+			width:100%!important;
+			@include transition(font-size 0.3s ease);
+		}
+		@include breakpoint(1540) {
+			@include font-size(6.4);
+			width:100%!important;
+			@include transition(font-size 0.3s ease);
+		}
+		span.retro {
+			font-weight: normal;
+			@include font-size(3.2);;
+			padding: 0 3px 0 2px;
+			color: $orange;
+			@include breakpoint(580) {
+				@include font-size(3.8);
+			}
+			@include breakpoint(768) {
+				padding: 0 4px 0 2px;
+			}
+			@include breakpoint(1540) {
+				@include font-size(5.4);
+			}
+		}
+		span.strapline {
+			display: none;
+			text-shadow: none;
+			color: $orange;
+			padding-left:0;
+			@include font-size(1.8);
+			@include transition(font-size 0.3s ease);
+			@include breakpoint(768) {
+				display:block;
+				line-height:0.6em;
+				@include transition(font-size 0.3s ease);
+			}
+			@include breakpoint(1540) {
+				@include font-size(2.6);
+				line-height:0.7em;
+				@include transition(font-size 0.3s ease);
+			}
+		}		
+	}
+}
