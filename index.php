@@ -9,6 +9,13 @@
 <!-- Only visibile on mobile screens --> 
 <?php include(TEMPLATEPATH."/inc/mobile-only-subscribe.php");?>
 
+
+<?php 
+  $cat = get_the_category(); 
+  $cat = $cat[0]; 
+  $myCat = $cat->cat_name; 
+?>  
+
 <!-- Start Wordpress Loop -->
 <?php if (have_posts()) : ?>
 <?php $count = 0; ?>
@@ -16,11 +23,7 @@
 <?php $count++; ?>
 <?php if ($count == 1) : ?>
 
-<?php 
-  $cat = get_the_category(); 
-  $cat = $cat[0]; 
-  $myCat = $cat->cat_name; 
-?>        
+      
 
 <article class="module <?php the_category_unlinked(''); ?>">
    <div class="post-meta" aria-hidden="true"><?php the_date(); ?>
@@ -36,7 +39,7 @@
       <?php else : ?>  
        <?php the_content('Read More'); ?>  
       <?php endif; ?>  
-      <a class="more" href="<?php the_permalink(); ?>" data-icon="9">Listen</a>
+      <a class="more" href="<?php the_permalink(); ?>" data-icon="9"><?php if ($myCat == "Blog") { echo "Read"; } else { echo "Listen"; } ?></a>
     </header>   
 </article>
 
