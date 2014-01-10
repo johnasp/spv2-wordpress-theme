@@ -45,7 +45,7 @@ if ( in_category( 'seasiders-podcast' ) &&  !is_home() )   {
 
 <header class="top-banner group">   
 <div id="logo" class="grid-half">
-	<p>Seasiders P<span class="retro" data-icon="<"></span>dcast <span class="strapline">An independent Blackpool FC fans podcast</span></p>
+	<p>Seasiders P<span class="screen-reader-text">o</span><span class="tower-logo" data-icon="<"></span>dcast <span class="strapline">An independent Blackpool FC fans podcast</span></p>
 </div> 
 
 <!--<div id="box-ad">
@@ -62,7 +62,6 @@ if ( in_category( 'seasiders-podcast' ) &&  !is_home() )   {
 <a href="http://www.jdoqocy.com/click-7085463-10483798" target="_top">
 <img src="http://www.lduhtrp.net/image-7085463-10483798" width="728" height="90" alt="FT Audible.co.uk" border="0"/></a>
 </div>-->
-
 </header>
 <div class="page-wrap group">
 

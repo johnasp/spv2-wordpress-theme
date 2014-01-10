@@ -11,7 +11,7 @@ nav[role="navigation"] {
 		@include transition(width 0.3s ease);
 		@include font-size(1.8);
 		width: 49.99%;
-		border: 1px solid $darkOrange;
+		border: 1px solid $base;
 		&:nth-child(1) {margin-top: $padding/2;}
 /*		&:nth-child(-n+6) {margin-bottom: $gutter;}
 		&:nth-child(odd) {margin-right: $gutter;}*/
