@@ -44,15 +44,15 @@ h1 {
 
 /* line 24, ../sass/custom/_typography.scss */
 h3 {
-  font-size: 30px;
-  font-size: 3rem;
+  font-size: 20px;
+  font-size: 2rem;
   margin-top: 40px;
   color: #d96d00; }
   @media (min-width: 1024px) {
     /* line 24, ../sass/custom/_typography.scss */
     h3 {
-      font-size: 40px;
-      font-size: 4rem; } }
+      font-size: 30px;
+      font-size: 3rem; } }
 
 /* line 30, ../sass/custom/_typography.scss */
 h4 {
@@ -1490,8 +1490,8 @@ article {
     margin-left: 10px; }
     /* line 167, ../sass/sections/_single.scss */
     article h3 span[data-icon="T"] {
-      font-size: 45px;
-      font-size: 4.5rem; }
+      font-size: 35px;
+      font-size: 3.5rem; }
   /* line 172, ../sass/sections/_single.scss */
   article h4 {
     font-size: 22px;

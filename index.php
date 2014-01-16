@@ -32,7 +32,7 @@
     <header> 
       <a class="latest" href="<?php the_permalink(); ?>"><?php the_title(); ?> </a>
 
-      <?php the_post_thumbnail('medium');?> 
+      <?php the_post_thumbnail('full');?> 
 
     <?php if ( is_home() || is_search() ) : // Only display excerpts for archives and search. ?>  
         <strong><?php the_excerpt(); ?></strong>  
