@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-
+<meta name="viewport" content="width=device-width, user-scalable=no">
 
 <title><?php bloginfo('name'); ?><?php wp_title(); ?></title>
 <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700|Roboto+Condensed:700|Fjalla+One' rel='stylesheet' type='text/css'>
@@ -34,11 +34,9 @@ else {
     echo " wp-post";
 }
 
-if ( in_category( 'seasiders-podcast' ) &&  !is_home() )   {
+if ( in_category( 'podcasts' ) &&  !is_home() )   {
 	echo " podcasts";
 }
-
-
 ?>
 ">
 

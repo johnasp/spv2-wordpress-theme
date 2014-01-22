@@ -1,3 +1,8 @@
+<?php
+/*
+Template Name: Quote
+*/
+
 <?php get_header(); ?> 
  
 <div class="grid group"> 
@@ -8,10 +13,6 @@
 
 <!-- Only visibile on mobile screens --> 
 <?php include(TEMPLATEPATH."/inc/mobile-only-subscribe.php");?>
-
-<!-- Get new pod post into a custom field into a var --> 
-
-<?php $newPod = get_field('new_podcast_layout'); ?>
 
 <!-- Start Wordpress Loop -->
 
@@ -27,16 +28,24 @@
               <?php include(TEMPLATEPATH."/inc/social-share.php");?> 
           </header>
 
+             <blockquote>
+                  <span class="arrow"></span><span aria-hidden="true" data-icon="B"></span>
+
+                   <?php $quote = get_post_meta($post->ID, 'Blockquote', true);
+                    if ($quote) {
+                       echo $quote; 
+                    }
+                    else { ?>
+                       <p>No quote - booo!</p>
+                    <?php } ?>
+              </blockquote>
+
           <?php the_content(); ?>  
 
-          <?php 
-           if  ($newPod == "true") { 
-              include(TEMPLATEPATH."/inc/podcast-only.php");
-           }
-          ?>
-
+  
           <?php include(TEMPLATEPATH."/inc/post-bottom.php");?>
-      </article>
+
+</article>
 
 <section id="related-posts" class="module archives">
 
