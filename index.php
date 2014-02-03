@@ -27,7 +27,7 @@
 
 <article class="module <?php the_category_unlinked(''); ?>">
    <div class="post-meta" aria-hidden="true"><?php the_date(); ?>
-      <span data-icon="<?php if ($myCat == "Blog") { echo "$"; } else { echo "G"; } ?>"><?php the_category(', '); ?> </span>
+      <span data-icon="<?php if ($myCat == "Blog") { echo "$"; } else if ($myCat == "Snippet") { echo "H"; } else { echo "G"; } ?>"><?php the_category(', '); ?> </span>
    </div>
     <header> 
       <a class="latest" href="<?php the_permalink(); ?>"><?php the_title(); ?> </a>

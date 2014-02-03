@@ -11,7 +11,7 @@ nav[role="navigation"] {
 		@include transition(width 0.3s ease);
 		@include font-size(1.8);
 		width: 49.99%;
-		border: 1px solid $base;
+		border: 1px solid $colour-primary;
 		&:nth-child(1) {margin-top: $padding/2;}
 /*		&:nth-child(-n+6) {margin-bottom: $gutter;}
 		&:nth-child(odd) {margin-right: $gutter;}*/
@@ -20,10 +20,10 @@ nav[role="navigation"] {
 		color: white;
 		text-align: center;
 		display:inline-block; /* inline-block inserts element spaces */
-		text-transform: uppercase;	    
+		text-transform: uppercase;	     
 		@include letterpress(#000);
 		@include font-stack-nav;
-		background: $orange;
+		background: $colour-primary; 
 		position: relative;
 		box-shadow: inset 0px 0px 3px 2px rgba($darkOrange, 0.7);
 		z-index: 1;
