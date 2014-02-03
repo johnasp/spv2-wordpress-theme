@@ -7,27 +7,12 @@ $width: 100%;
 $widthMid: 95%;
 $blogH3: 2.0; 
 
-/*COLOUR*/
-
+/* COLOURS */
 $copy: #333;
 
-$colour-primary: #FF8000; 
-$colour-cta: adjust-hue($colour-primary, 180deg);
-$colour-shade1: darken(adjust-hue($colour-primary, 0),5%);
-$colour-shade2: darken(adjust-hue($colour-primary, 15deg),5%);
-$colour-shade3: darken(adjust-hue($colour-primary, -15deg),5%);
+$base: #FF8000; 
 
-/* For testing colour palette
-
-.colour1 { background: $colour-primary;}
-.colour2 {background:$colour-shade1;}
-.colour3 {background:$colour-shade2;}
-.colour4 {background:$colour-shade3;}
-.colour6 {background:$colour-cta;}
-
-*/
-
-$orange: green;
+$orange: #FF8000;
 $darkOrange: #A65300; 
 $lightOrange: #FFDDBB;
 $darkGrey: #222222;

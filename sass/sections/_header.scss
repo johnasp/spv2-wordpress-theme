@@ -28,7 +28,7 @@
 .strapline {
 	display: none;
 	text-shadow: none;
-	color: $colour-primary;
+	color: $base;
 	padding-left:0;
 	@include font-size(1.8);
 	@include transition(font-size 0.3s ease);
@@ -47,7 +47,7 @@
 	font-weight: normal;
 	@include font-size(3.2);;
 	padding: 0 3px 0 2px;
-	color: $colour-primary;
+	color: $base;
 	@include breakpoint(580) {
 		@include font-size(3.8);
 	}

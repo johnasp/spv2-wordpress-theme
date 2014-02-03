@@ -14,7 +14,10 @@
     <h4>Fans' match comments:</h4>
     <?php the_field('fans_comments'); ?>
 
-    <h4>Manager's thoughts:</h4>
+    <h4>Manager's match comments:</h4>
+    <?php the_field('manager_comments'); ?>
+
+    <h4>Manager's audio comments:</h4>
     <?php the_field('manager_audio'); ?>
 
 </section>
