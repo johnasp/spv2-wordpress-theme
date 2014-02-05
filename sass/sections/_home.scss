@@ -38,6 +38,7 @@ article {
 			background: $hover;
 		}
 	}
+	li { display:inline-block; width: 50px; height: 50px;}
 }
 div.post-meta {
 	color: white;
@@ -47,7 +48,6 @@ div.post-meta {
 	padding-left: $padding;
 	text-transform: uppercase!important;
 	font-size: 12px;
-	background: $orange;
 	display: block;
 	position: absolute;
 	width: 100%;
@@ -60,13 +60,21 @@ div.post-meta {
 		&:hover { text-decoration: underline; }
 	}
 	span {
-		float: right;
+		float: right;  
 		padding-right: $padding;
 	}
 }
-article.blog div.post-meta {
-	background: adjust-hue($orange, 343deg);
+article.podcasts div.post-meta {
+	background: $colour-shade1;
 }
+article.snippet div.post-meta {
+	background: $colour-shade2;  
+}
+article.blog div.post-meta {
+	background: $colour-shade3;
+}
+
+
 
 .post span {
 	position: absolute;
@@ -225,7 +233,6 @@ article.blog div.post-meta {
 	a:hover {
 		background: $hover; 
 		color: white;
-
 	}
 }
 button#hide {

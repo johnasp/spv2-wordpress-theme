@@ -24,6 +24,15 @@
           <header>
               <h1><?php the_title(); ?></h1> 
               <?php the_post_thumbnail('medium'); ?>
+
+     <!-- <ul>
+        <li class="colour1">TEST</li>
+        <li class="colour2">TEST</li>
+        <li class="colour3">TEST</li>
+        <li class="colour4">TEST</li>
+        <li class="colour6">TEST</li>
+      </ul>-->
+
               <?php include(TEMPLATEPATH."/inc/social-share.php");?> 
           </header>
 

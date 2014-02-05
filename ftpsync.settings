@@ -6,7 +6,7 @@
 
 		"host": "johnaspinall.co.uk",
 		"username": "jaspinal",  // or null for anonymous login
-		"password": "B@mberEll1s53fu",
+		"password": "BudRasp5",
 		"path": "/www/seasiderspodcast.co.uk/wp-content/themes/spv2-theme",
 
 		"upload_on_save": false // set *false* if you do not want to upload on save!
