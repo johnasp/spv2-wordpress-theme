@@ -16,6 +16,12 @@
 <!-- Start Wordpress Loop -->
 
 <?php 
+  $cat = get_the_category(); 
+  $cat = $cat[0]; 
+  $myCat = $cat->cat_name; 
+?>  
+
+<?php 
   if ( have_posts() ) {
     while ( have_posts() ) {
       the_post(); ?>
@@ -23,15 +29,15 @@
          <div class="post-meta" aria-hidden="true" ><?php the_date(); ?><span data-icon="G"><?php the_category(', '); ?> </span></div>
           <header>
               <h1><?php the_title(); ?></h1> 
-              <?php the_post_thumbnail('medium'); ?>
-
-     <!-- <ul>
-        <li class="colour1">TEST</li>
-        <li class="colour2">TEST</li>
-        <li class="colour3">TEST</li>
-        <li class="colour4">TEST</li>
-        <li class="colour6">TEST</li>
-      </ul>-->
+              <?php 
+              //  if ($myCat == "Podcast")  {
+                 the_post_thumbnail('full'); 
+              // }
+              //  else {
+              //    echo "TEST";
+              //  }
+                
+              ?>
 
               <?php include(TEMPLATEPATH."/inc/social-share.php");?> 
           </header>

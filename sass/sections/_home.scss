@@ -38,7 +38,6 @@ article {
 			background: $hover;
 		}
 	}
-	li { display:inline-block; width: 50px; height: 50px;}
 }
 div.post-meta {
 	color: white;
@@ -64,16 +63,18 @@ div.post-meta {
 		padding-right: $padding;
 	}
 }
-article.podcasts div.post-meta {
+article.podcast div.post-meta {
 	background: $colour-shade1;
 }
-article.snippet div.post-meta {
+article.audio div.post-meta {
 	background: $colour-shade2;  
 }
 article.blog div.post-meta {
 	background: $colour-shade3;
 }
-
+article.video div.post-meta {
+	background: $colour-shade4;
+}
 
 
 .post span {

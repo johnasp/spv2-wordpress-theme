@@ -27,19 +27,48 @@
 
 <article class="module <?php the_category_unlinked(''); ?>">
    <div class="post-meta" aria-hidden="true"><?php the_date(); ?>
-      <span data-icon="<?php if ($myCat == "Blog") { echo "$"; } else if ($myCat == "Snippet") { echo "H"; } else { echo "G"; } ?>"><?php the_category(', '); ?> </span>
+      <span data-icon="
+      <?php 
+        if ($myCat == "Blog") { 
+          echo "$"; 
+        } 
+        else if ($myCat == "Audio") { 
+          echo "2"; 
+        } 
+        else if ($myCat == "Video") { 
+          echo "%"; 
+        } 
+        else { 
+          echo "G"; 
+        } 
+      ?>
+      ">
+      <?php the_category(', '); ?> 
+      </span>
    </div>
     <header> 
       <a class="latest" href="<?php the_permalink(); ?>"><?php the_title(); ?> </a>
 
-      <?php the_post_thumbnail('full');?> 
+
 
     <?php if ( is_home() || is_search() ) : // Only display excerpts for archives and search. ?>  
         <strong><?php the_excerpt(); ?></strong>  
       <?php else : ?>  
        <?php the_content('Read More'); ?>  
       <?php endif; ?>  
-      <a class="more" href="<?php the_permalink(); ?>" data-icon="9"><?php if ($myCat == "Blog") { echo "Read"; } else { echo "Listen"; } ?></a>
+      <a class="more" href="<?php the_permalink(); ?>" data-icon="9">
+      <?php 
+      if ($myCat == "Blog") { 
+        echo "Read"; 
+      } 
+      else if ($myCat =="Video") {
+        echo "Watch";
+      }
+      else { 
+        echo "Listen"; 
+      } 
+      ?>
+      </a>
     </header>   
 </article>
 

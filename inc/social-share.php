@@ -10,7 +10,7 @@ $PostTitle = $_SERVER['REQUEST_URI'];
 $PostTitle = str_replace ("-", " ", $PostTitle ); 
 $PostTitle = str_replace ("/", " ", $PostTitle );
 $PostTitle = ucwords($PostTitle);
-$PostTitle = "Listen to @SeasidersPod".$PostTitle;
+$PostTitle = $PostTitle." from @SeasidersPod";
 
 // Get the Wordpress excerpt into a variable out of the loop
 global $post;

@@ -1,3 +1,59 @@
+#newsnow { padding: $padding/2;}
+#newsnowlogo {
+	text-align: center;
+	margin-top: $padding;
+
+	a {
+		@include font-size(1.2);
+		color: #fff;
+		&:hover {
+			text-decoration: underline!important;
+		}
+	}
+	img {
+		margin: 0 auto;
+	}
+}
+
+#catalogue {
+	padding-top: 14px;
+	nav {
+		font-size:0;
+		margin: $padding 0;
+			a {
+				color: #FFF;
+				text-transform: uppercase;
+				@include font-size(1.6);
+				width: 32.65%;
+				display: inline-block;
+				text-decoration: none;
+				text-align: center;
+				padding: $padding/2;
+				position: relative;
+				&.tab-utp {
+					background: $utp;
+					&:hover {
+						background: lighten ($utp,10%);
+					}
+					span {color: $utp;}
+				}
+				&.tab-sp {
+					background: $sp;
+				}
+				&:nth-child(-n+2) { margin-right: 1%;};
+
+				span {
+					position: absolute;
+					@include font-size(4.0);
+					bottom: -32px;
+					left: 30%;
+					overflow:hidden;
+				}
+			}
+	}
+}
+
+
 #sidebar {
 	float: right;
 	.archives {
@@ -28,22 +84,6 @@
 	a {
 		text-decoration: none;
 	}
-	#newsnow { padding: $padding/2;}
-	#newsnowlogo {
-		text-align: center;
-		margin-top: $padding;
-
-		a {
-			@include font-size(1.2);
-			color: #fff;
-			&:hover {
-				text-decoration: underline!important;
-			}
-		}
-		img {
-			margin: 0 auto;
-		}
-	}
 	#live { 
 		.on-air {
 			background: rgba($darkGrey, 0.85);
@@ -60,47 +100,6 @@
 		bottom: 10px;
 		left: 10px;
 		width: 60%;
-	}
-	#catalogue {
-		padding-top: 14px;
-
-		section {
-		
-		}
-		nav {
-			font-size:0;
-			margin: $padding 0;
-				a {
-					color: #FFF;
-					text-transform: uppercase;
-					@include font-size(1.6);
-					width: 32.65%;
-					display: inline-block;
-					text-decoration: none;
-					text-align: center;
-					padding: $padding/2;
-					position: relative;
-					&.tab-utp {
-						background: $utp;
-						&:hover {
-							background: lighten ($utp,10%);
-						}
-						span {color: $utp;}
-					}
-					&.tab-sp {
-						background: $sp;
-					}
-					&:nth-child(-n+2) { margin-right: 1%;};
-
-					span {
-						position: absolute;
-						@include font-size(4.0);
-						bottom: -32px;
-						left: 30%;
-						overflow:hidden;
-					}
-				}
-		}
 	}
 }
 

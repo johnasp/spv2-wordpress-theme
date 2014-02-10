@@ -42,12 +42,14 @@
 	.grid-1-4 {width: 25%;}
 	#sideMobile, #sideSocial {width: 100%;}
 	#sideMobile { padding-right:0;}
+	#sidebar { width: 75%;}
 }
 @include breakpoint(midish) {
 	.grid-1-2 {width: 66.66%;}
 	.grid-1-4 {width: 33.33%;}
 	#sideMobile, #sideSocial {width: 50%;}
 	#sideMobile{ padding-right: $padding;}
+	#sidebar { width: 66.66%}
 }
 .module {
 	background: #fff;

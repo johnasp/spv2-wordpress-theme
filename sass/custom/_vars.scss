@@ -14,8 +14,9 @@ $copy: #333;
 $colour-primary: #FF8000; 
 $colour-cta: adjust-hue($colour-primary, 180deg);
 $colour-shade1: darken(adjust-hue($colour-primary, 0),5%);
-$colour-shade2: darken(adjust-hue($colour-primary, 15deg),5%);
+$colour-shade2: darken(adjust-hue($colour-primary, -4deg),15%);
 $colour-shade3: darken(adjust-hue($colour-primary, -15deg),5%);
+$colour-shade4: darken(adjust-hue($colour-primary, -45deg),15%);
 
 /* For testing colour palette
 
