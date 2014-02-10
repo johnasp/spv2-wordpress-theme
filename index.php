@@ -48,10 +48,14 @@
    </div>
     <header> 
       <a class="latest" href="<?php the_permalink(); ?>"><?php the_title(); ?> </a>
+  
+      <?php
+      if ( has_post_thumbnail() ) { // check if the post has a Post Thumbnail assigned to it.
+         the_post_thumbnail('full');
+       }
+      ?>
 
-
-
-    <?php if ( is_home() || is_search() ) : // Only display excerpts for archives and search. ?>  
+      <?php if ( is_home() || is_search() ) : // Only display excerpts for archives and search. ?>  
         <strong><?php the_excerpt(); ?></strong>  
       <?php else : ?>  
        <?php the_content('Read More'); ?>  

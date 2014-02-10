@@ -1340,35 +1340,82 @@ button#hide {
     padding: 0;
     margin-top: 3px; }
 
-/* line 1, ../sass/sections/_single.scss */
+/* line 2, ../sass/sections/_single.scss */
+.blogSocial .icons div {
+  width: 18%;
+  display: inline-block;
+  text-align: center; }
+/* line 7, ../sass/sections/_single.scss */
+.blogSocial .icons a {
+  display: inline-block;
+  color: #737373;
+  font-size: 18px;
+  font-size: 1.8rem;
+  font-weight: bold;
+  position: relative;
+  text-transform: uppercase;
+  text-decoration: none;
+  -webkit-transition: color 0.3s linear;
+  -moz-transition: color 0.3s linear;
+  -o-transition: color 0.3s linear;
+  transition: color 0.3s linear; }
+  /* line 16, ../sass/sections/_single.scss */
+  .blogSocial .icons a:hover, .blogSocial .icons a:focus {
+    -webkit-transition: color 0.05s ease;
+    -moz-transition: color 0.05s ease;
+    -o-transition: color 0.05s ease;
+    transition: color 0.05s ease; }
+  /* line 18, ../sass/sections/_single.scss */
+  .blogSocial .icons a.itunes:hover, .blogSocial .icons a.itunes:focus {
+    color: #333333; }
+  /* line 23, ../sass/sections/_single.scss */
+  .blogSocial .icons a.rss:hover, .blogSocial .icons a.rss:focus {
+    color: #ff8000; }
+  /* line 28, ../sass/sections/_single.scss */
+  .blogSocial .icons a.twitter:hover, .blogSocial .icons a.twitter:focus {
+    color: #03a6f1; }
+  /* line 33, ../sass/sections/_single.scss */
+  .blogSocial .icons a.facebook:hover, .blogSocial .icons a.facebook:focus {
+    color: #37548e; }
+  /* line 38, ../sass/sections/_single.scss */
+  .blogSocial .icons a.google:hover, .blogSocial .icons a.google:focus {
+    color: red; }
+  /* line 42, ../sass/sections/_single.scss */
+  .blogSocial .icons a span {
+    font-weight: normal;
+    font-size: 42px;
+    font-size: 4.2rem;
+    display: block; }
+
+/* line 50, ../sass/sections/_single.scss */
 .page {
   padding: 0 20px 20px 20px;
   background: #FFF;
   margin-bottom: 20px; }
 
-/* line 6, ../sass/sections/_single.scss */
+/* line 55, ../sass/sections/_single.scss */
 #single {
   padding-top: 36px; }
-  /* line 8, ../sass/sections/_single.scss */
+  /* line 57, ../sass/sections/_single.scss */
   #single header {
     position: relative; }
 
-/* line 12, ../sass/sections/_single.scss */
+/* line 61, ../sass/sections/_single.scss */
 .social-share {
   position: absolute;
   bottom: 0;
   right: 0;
   background: rgba(255, 255, 255, 0.9);
   padding: 4px 4px 0 0; }
-  /* line 18, ../sass/sections/_single.scss */
+  /* line 67, ../sass/sections/_single.scss */
   .social-share a {
     text-decoration: none; }
 
-/* line 23, ../sass/sections/_single.scss */
+/* line 72, ../sass/sections/_single.scss */
 article {
   position: relative;
   padding-top: 20px; }
-  /* line 26, ../sass/sections/_single.scss */
+  /* line 75, ../sass/sections/_single.scss */
   article .powerpress_player {
     border-top: 1px solid white;
     background: #c8c8c8;
@@ -1377,17 +1424,17 @@ article {
     width: 100%;
     position: relative;
     top: 50%; }
-  /* line 35, ../sass/sections/_single.scss */
+  /* line 84, ../sass/sections/_single.scss */
   article .wp-post-image {
     width: 100%; }
-  /* line 38, ../sass/sections/_single.scss */
+  /* line 87, ../sass/sections/_single.scss */
   article .related-posts img {
     width: auto; }
-  /* line 41, ../sass/sections/_single.scss */
+  /* line 90, ../sass/sections/_single.scss */
   article .powerpress-mejs-audio {
     margin: 0 auto;
     width: 100%; }
-  /* line 45, ../sass/sections/_single.scss */
+  /* line 94, ../sass/sections/_single.scss */
   article .powerpress_links {
     font-size: 12px;
     font-size: 1.2rem;
@@ -1396,19 +1443,19 @@ article {
     margin: 0;
     padding: 4px 8px;
     text-transform: uppercase; }
-    /* line 52, ../sass/sections/_single.scss */
+    /* line 101, ../sass/sections/_single.scss */
     article .powerpress_links a {
       color: #222222;
       text-decoration: bold; }
-      /* line 54, ../sass/sections/_single.scss */
+      /* line 103, ../sass/sections/_single.scss */
       article .powerpress_links a:hover {
         color: #00aaff; }
-  /* line 58, ../sass/sections/_single.scss */
+  /* line 107, ../sass/sections/_single.scss */
   article .sub-nav {
     padding: 0;
     background: none;
     font-size: 0; }
-    /* line 62, ../sass/sections/_single.scss */
+    /* line 111, ../sass/sections/_single.scss */
     article .sub-nav a {
       padding: 5px;
       background: #737373;
@@ -1419,53 +1466,7 @@ article {
       text-decoration: none;
       color: #e1e1e1;
       display: block; }
-  /* line 75, ../sass/sections/_single.scss */
-  article .blogSocial .icons div {
-    width: 18%;
-    display: inline-block;
-    text-align: center; }
-  /* line 80, ../sass/sections/_single.scss */
-  article .blogSocial .icons a {
-    display: inline-block;
-    color: #737373;
-    font-size: 18px;
-    font-size: 1.8rem;
-    font-weight: bold;
-    position: relative;
-    text-transform: uppercase;
-    text-decoration: none;
-    -webkit-transition: color 0.3s linear;
-    -moz-transition: color 0.3s linear;
-    -o-transition: color 0.3s linear;
-    transition: color 0.3s linear; }
-    /* line 89, ../sass/sections/_single.scss */
-    article .blogSocial .icons a:hover, article .blogSocial .icons a:focus {
-      -webkit-transition: color 0.05s ease;
-      -moz-transition: color 0.05s ease;
-      -o-transition: color 0.05s ease;
-      transition: color 0.05s ease; }
-    /* line 91, ../sass/sections/_single.scss */
-    article .blogSocial .icons a.itunes:hover, article .blogSocial .icons a.itunes:focus {
-      color: #333333; }
-    /* line 96, ../sass/sections/_single.scss */
-    article .blogSocial .icons a.rss:hover, article .blogSocial .icons a.rss:focus {
-      color: #ff8000; }
-    /* line 101, ../sass/sections/_single.scss */
-    article .blogSocial .icons a.twitter:hover, article .blogSocial .icons a.twitter:focus {
-      color: #03a6f1; }
-    /* line 106, ../sass/sections/_single.scss */
-    article .blogSocial .icons a.facebook:hover, article .blogSocial .icons a.facebook:focus {
-      color: #37548e; }
-    /* line 111, ../sass/sections/_single.scss */
-    article .blogSocial .icons a.google:hover, article .blogSocial .icons a.google:focus {
-      color: red; }
-    /* line 115, ../sass/sections/_single.scss */
-    article .blogSocial .icons a span {
-      font-weight: normal;
-      font-size: 42px;
-      font-size: 4.2rem;
-      display: block; }
-  /* line 123, ../sass/sections/_single.scss */
+  /* line 125, ../sass/sections/_single.scss */
   article .match figure {
     padding: 8px;
     background: #ffddbb;
@@ -1473,7 +1474,7 @@ article {
     text-align: center;
     display: inline-block;
     margin-top: 20px; }
-    /* line 130, ../sass/sections/_single.scss */
+    /* line 132, ../sass/sections/_single.scss */
     article .match figure figcaption {
       font-weight: bold;
       color: #a65300;
@@ -1481,11 +1482,11 @@ article {
       font-size: 14px;
       font-size: 1.4rem;
       padding: 20px 0 0 0; }
-  /* line 140, ../sass/sections/_single.scss */
+  /* line 142, ../sass/sections/_single.scss */
   article header {
     position: relative;
     margin-top: 2%; }
-  /* line 144, ../sass/sections/_single.scss */
+  /* line 146, ../sass/sections/_single.scss */
   article h1, article a.latest {
     font-family: 'Roboto Condensed', sans-serif;
     text-decoration: none;
@@ -1503,31 +1504,31 @@ article {
     -o-transition: background, 0.2s ease !important;
     transition: background, 0.2s ease !important; }
     @media (min-width: 480px) {
-      /* line 144, ../sass/sections/_single.scss */
+      /* line 146, ../sass/sections/_single.scss */
       article h1, article a.latest {
         font-size: 24px;
         font-size: 2.4rem; } }
     @media (min-width: 768px) {
-      /* line 144, ../sass/sections/_single.scss */
+      /* line 146, ../sass/sections/_single.scss */
       article h1, article a.latest {
         font-size: 30px;
         font-size: 3rem; } }
-  /* line 164, ../sass/sections/_single.scss */
+  /* line 166, ../sass/sections/_single.scss */
   article h3 span {
     font-weight: normal;
     margin-left: 10px; }
-    /* line 167, ../sass/sections/_single.scss */
+    /* line 169, ../sass/sections/_single.scss */
     article h3 span[data-icon="T"] {
       font-size: 35px;
       font-size: 3.5rem; }
-  /* line 172, ../sass/sections/_single.scss */
+  /* line 174, ../sass/sections/_single.scss */
   article h4 {
     font-size: 22px;
     font-size: 2.2rem; }
-  /* line 175, ../sass/sections/_single.scss */
+  /* line 177, ../sass/sections/_single.scss */
   article img {
     margin-bottom: 0; }
-  /* line 178, ../sass/sections/_single.scss */
+  /* line 180, ../sass/sections/_single.scss */
   article .meta {
     margin-top: 6%;
     font-weight: bold;
@@ -1536,58 +1537,58 @@ article {
     font-size: 16px;
     font-size: 1.6rem; }
     @media (min-width: 480px) {
-      /* line 178, ../sass/sections/_single.scss */
+      /* line 180, ../sass/sections/_single.scss */
       article .meta {
         font-size: 12px;
         font-size: 1.2rem; } }
     @media (min-width: 1024px) {
-      /* line 178, ../sass/sections/_single.scss */
+      /* line 180, ../sass/sections/_single.scss */
       article .meta {
         font-size: 16px;
         font-size: 1.6rem; } }
-    /* line 186, ../sass/sections/_single.scss */
+    /* line 188, ../sass/sections/_single.scss */
     article .meta time {
       margin-right: 20px; }
-    /* line 189, ../sass/sections/_single.scss */
+    /* line 191, ../sass/sections/_single.scss */
     article .meta span {
       margin-right: 6.66667px;
       font-weight: normal; }
-    /* line 193, ../sass/sections/_single.scss */
+    /* line 195, ../sass/sections/_single.scss */
     article .meta a {
       margin-right: 20px;
       color: inherit;
       border-bottom: none;
       text-decoration: none;
       font-size: inherit; }
-    /* line 200, ../sass/sections/_single.scss */
+    /* line 202, ../sass/sections/_single.scss */
     article .meta a:hover {
       text-decoration: underline; }
 
-/* line 205, ../sass/sections/_single.scss */
+/* line 207, ../sass/sections/_single.scss */
 .filter-nav {
   padding-top: 0;
   padding-bottom: 20px; }
-  /* line 208, ../sass/sections/_single.scss */
+  /* line 210, ../sass/sections/_single.scss */
   .filter-nav a {
     display: block;
     text-align: center; }
-    /* line 211, ../sass/sections/_single.scss */
+    /* line 213, ../sass/sections/_single.scss */
     .filter-nav a.show-hide-nav {
       background: gray;
       color: #FFF;
       font-size: 24px;
       font-size: 2.4rem;
       padding: 0; }
-  /* line 218, ../sass/sections/_single.scss */
+  /* line 220, ../sass/sections/_single.scss */
   .filter-nav a:not(.show-hide-nav) {
     /*Hide all filter buttons except control button*/
     display: none; }
-    /* line 220, ../sass/sections/_single.scss */
+    /* line 222, ../sass/sections/_single.scss */
     body.show-filter-nav .filter-nav a:not(.show-hide-nav) {
       /*Show all filter buttons*/
       display: inline-block; }
 
-/* line 226, ../sass/sections/_single.scss */
+/* line 228, ../sass/sections/_single.scss */
 #related-posts figure {
   background: whitesmoke;
   width: 45%;
@@ -1597,14 +1598,14 @@ article {
   margin-bottom: 10px;
   position: relative; }
   @media (min-width: 480px) {
-    /* line 226, ../sass/sections/_single.scss */
+    /* line 228, ../sass/sections/_single.scss */
     #related-posts figure {
       width: 30%; } }
-/* line 236, ../sass/sections/_single.scss */
+/* line 238, ../sass/sections/_single.scss */
 #related-posts img {
   width: 100%;
   position: relative; }
-/* line 240, ../sass/sections/_single.scss */
+/* line 242, ../sass/sections/_single.scss */
 #related-posts figcaption {
   padding: 6px;
   font-size: 14px;
@@ -1618,10 +1619,10 @@ article {
   -moz-transition: background, 0.2s ease !important;
   -o-transition: background, 0.2s ease !important;
   transition: background, 0.2s ease !important; }
-  /* line 248, ../sass/sections/_single.scss */
+  /* line 250, ../sass/sections/_single.scss */
   #related-posts figcaption:hover {
     background: #00aaff; }
-/* line 251, ../sass/sections/_single.scss */
+/* line 253, ../sass/sections/_single.scss */
 #related-posts a {
   font-size: 14px;
   font-size: 1.4rem; }

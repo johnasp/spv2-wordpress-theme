@@ -1,3 +1,52 @@
+.blogSocial {	
+	.icons div {
+		width:18%; 
+		display:inline-block; 
+		text-align:center;
+	}
+	.icons a {
+		display: inline-block;
+		color: $midGrey;
+		@include font-size (1.8);
+		font-weight: bold;
+		position: relative;
+		text-transform: uppercase;	
+		text-decoration:none;
+		@include transition(color 0.3s linear);
+			&:hover, &:focus {@include transition(color 0.05s ease);}
+			&.itunes {
+				&:hover, &:focus {
+					color: $copy;	  
+				}
+			}
+			&.rss {
+				&:hover, &:focus {
+					color: $rss;			
+				}
+			}
+			&.twitter {
+				&:hover, &:focus {
+					color: $twitter;
+				}		
+			}
+			&.facebook {
+				&:hover, &:focus {
+					color: $facebook;
+				}	
+			}
+			&.google {
+				&:hover, &:focus {
+					color: $google;
+				}	
+			}
+		span {
+			font-weight: normal;
+			@include font-size (4.2);
+			display: block;
+		}				
+	}
+}
+
 .page {
 	padding: 0 $padding $padding $padding;
 	background:#FFF;
@@ -71,54 +120,7 @@ article {
 		}
 	}
 
-	.blogSocial {	
-			.icons div {
-				width:18%; 
-				display:inline-block; 
-				text-align:center;
-			}
-			.icons a {
-				display: inline-block;
-				color: $midGrey;
-				@include font-size (1.8);
-				font-weight: bold;
-				position: relative;
-				text-transform: uppercase;	
-				text-decoration:none;
-				@include transition(color 0.3s linear);
-					&:hover, &:focus {@include transition(color 0.05s ease);}
-					&.itunes {
-							&:hover, &:focus {
-								color: $copy;	  
-						}
-					}
-					&.rss {
-							&:hover, &:focus {
-							color: $rss;			
-						}
-					}
-					&.twitter {
-							&:hover, &:focus {
-							color: $twitter;
-						}		
-					}
-					&.facebook {
-							&:hover, &:focus {
-							color: $facebook;
-						}	
-					}
-					&.google {
-							&:hover, &:focus {
-							color: $google;
-						}	
-					}
-				span {
-						font-weight: normal;
-						@include font-size (4.2);
-						display: block;
-				}				
-			}
-		}
+
 	.match {
 		figure {
 			padding: 8px;

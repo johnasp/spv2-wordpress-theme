@@ -25,7 +25,7 @@
   if ( have_posts() ) {
     while ( have_posts() ) {
       the_post(); ?>
-      <article id="single" class="module blog">  
+      <article id="single" class="module <?php the_category_unlinked(''); ?>">  
          <div class="post-meta" aria-hidden="true" ><?php the_date(); ?><span data-icon="G"><?php the_category(', '); ?> </span></div>
           <header>
               <h1><?php the_title(); ?></h1> 
