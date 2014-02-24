@@ -24,7 +24,7 @@
       echo 'Not Found - '; 
     } 
     if (is_home()) { 
-     bloginfo('description'); echo ' - '; bloginfo('name');
+     echo 'Blackpool FC fans podcast - The Seasiders Podcast';
     } 
     else { 
       bloginfo('name'); 
@@ -34,7 +34,7 @@
 <?php if (is_single() || is_page() ) : if (have_posts() ) : while (have_posts() ) : the_post(); ?>
 <meta name="description" content="<?php echo get_the_excerpt();?>">
 <?php endwhile; endif; elseif (is_home() ): ?>
-<meta name="description" content="A Blackpool FC fans podcast, audio and video resource.">
+<meta name="description" content="The Seasiders Podcast is an independent Blackpool FC fans podcast, audio and video resource.">
 <?php endif; ?>
 
 
