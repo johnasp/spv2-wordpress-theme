@@ -4,19 +4,51 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, user-scalable=no">
 
-<title><?php bloginfo('name'); ?><?php wp_title(); ?></title>
-<link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700|Roboto+Condensed:700|Fjalla+One' rel='stylesheet' type='text/css'>
+<!-- http://perishablepress.com/how-to-generate-perfect-wordpress-title-tags-without-a-plugin/  -->
+
+<title>
+  <?php 
+    if (function_exists('is_tag') && is_tag()) { 
+      echo 'Tag Archive for &quot;'.$tag.'&quot; - '; 
+    } 
+    elseif (is_archive()) { 
+      wp_title(''); echo ' Archive - '; 
+    } 
+    elseif (is_search()) { 
+      echo 'Search for &quot;'.wp_specialchars($s).'&quot; - '; 
+    } 
+    elseif (!(is_404()) && (is_single()) || (is_page())) { 
+      wp_title(''); echo ' - '; 
+    } 
+    elseif (is_404()) { 
+      echo 'Not Found - '; 
+    } 
+    if (is_home()) { 
+     bloginfo('description'); echo ' - '; bloginfo('name');
+    } 
+    else { 
+      bloginfo('name'); 
+    } 
+  ?>
+</title>
+<?php if (is_single() || is_page() ) : if (have_posts() ) : while (have_posts() ) : the_post(); ?>
+<meta name="description" content="<?php echo get_the_excerpt();?>">
+<?php endwhile; endif; elseif (is_home() ): ?>
+<meta name="description" content="A Blackpool FC fans podcast, audio and video resource.">
+<?php endif; ?>
+
 
 <link rel="stylesheet" type="text/css" href="<?php bloginfo('stylesheet_url'); ?>" >
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700|Roboto+Condensed:700|Fjalla+One' rel='stylesheet' type='text/css'>
+
 <!-- Apple touch icons -->
 <link rel="apple-touch-icon" href="<?php bloginfo('template_url'); ?>/images/touch-icon-iphone.png" />
 <link rel="apple-touch-icon" sizes="72x72" href="<?php bloginfo('template_url'); ?>/images/touch-icon-ipad.png" />
 <link rel="apple-touch-icon" sizes="114x114" href="<?php bloginfo('template_url'); ?>/images/touch-icon-iphone-retina.png" />
 <link rel="apple-touch-icon" sizes="144x144" href="<?php bloginfo('template_url'); ?>/images/touch-icon-ipad-retina.png" />
 
-
-<!-- Jquery from CDN -->
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<!-- Webmaster tools verification -->
+<meta name="google-site-verification" content="2SG67uWMctkcL0QxFQ1dHbLKzKMG6jiNKHpoARJpkhE" />
 
 </head>
 <body class="<?php
@@ -26,7 +58,6 @@ if ( is_home() ) {
 else {
     echo the_slug();
 }
-
 if ( is_page() ) {
     echo " wp-page";
 } 
@@ -44,7 +75,7 @@ if ( in_category( 'podcasts' ) &&  !is_home() )   {
 <header class="top-banner group">   
 <div id="logo" class="grid-half">
 	<p>Seasiders P<span class="screen-reader-text">o</span><span class="tower-logo" data-icon="<"></span>dcast <span class="strapline">An independent Blackpool FC fans podcast</span></p>
-</div> 
+</div>  
 
 <!--<div id="box-ad">
 <a href="http://www.kqzyfj.com/click-7085463-10451725" target="_top">

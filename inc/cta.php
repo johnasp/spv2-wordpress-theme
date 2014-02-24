@@ -1,7 +1,7 @@
 <aside id="cta" class="grid-1-4 group">
 
 <section id="newsnow" class="module group partner">
-  <div id="newsnowlogo" title="Click here for more Blackpool news from NewsNow" onclick="window.open('http://www.newsnow.co.uk/h/Sport/Football/Championship/Blackpool','newsnow')" ><img src="http://www.tangerinedreaming.com/wp-content/uploads/2011/06/newsnow_ab.gif" alt="As featured on NewsNow: Blackpool news"/><a id="newsnowlogo_a" href="http://www.newsnow.co.uk/h/Sport/Football/Championship/Blackpool" target="newsnow">Blackpool News 24/7</a></div>
+  <div id="newsnowlogo" title="Click here for more Blackpool news from NewsNow" onclick="window.open('http://www.newsnow.co.uk/h/Sport/Football/Championship/Blackpool','newsnow')" ><img src="http://www.seasiderspodcast.co.uk/wp-content/themes/spv2-wordpress-theme/images/newsnow.gif" alt="As featured on NewsNow: Blackpool news"/><a id="newsnowlogo_a" href="http://www.newsnow.co.uk/h/Sport/Football/Championship/Blackpool" target="newsnow">Blackpool News 24/7</a></div>
   <script type="text/javascript">
   document.getElementById('newsnowlogo').style.cursor='pointer';
   document.getElementById('newsnowlogo_a').style.textDecoration='none';

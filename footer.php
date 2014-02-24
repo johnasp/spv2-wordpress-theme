@@ -4,6 +4,8 @@
     
 </div><!-- grid -->    
 </div> <!-- page-wrap -->
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
 <script src="<?php bloginfo('template_url'); ?>/js/jquery.fitvids.min.js"></script>
 <script src="<?php bloginfo('template_url'); ?>/js/global.js"></script>
 
@@ -23,3 +25,6 @@
 
 </body>
 </html>
+
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700|Roboto+Condensed:700|Fjalla+One' rel='stylesheet' type='text/css'>
+
