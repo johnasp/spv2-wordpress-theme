@@ -1,5 +1,5 @@
 <footer class="grid-1 group">
-<div class="module">Copyright &copy; John Aspinall - 2013.  Follow us on <a href="https://plus.google.com/113085745119575612415" rel="publisher">Google+</a></div>
+<div class="module">Copyright &copy; John Aspinall.  Follow us on <a href="https://plus.google.com/+SeasiderspodcastCoUk/" rel="publisher">Google+</a></div>
 </footer>
     
 </div><!-- grid -->    

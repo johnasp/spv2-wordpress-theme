@@ -1,3 +1,6 @@
+.byline {
+	float: right;
+}
 .blogSocial {	
 	.icons div {
 		width:18%; 
@@ -119,8 +122,6 @@ article {
 		display: block;
 		}
 	}
-
-
 	.match {
 		figure {
 			padding: 8px;
@@ -138,7 +139,6 @@ article {
 			}
 		}
 	}
-	
 		header {
 			position: relative;
 			margin-top: $gutter;

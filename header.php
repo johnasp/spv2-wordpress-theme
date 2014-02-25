@@ -47,8 +47,9 @@
 <link rel="apple-touch-icon" sizes="114x114" href="<?php bloginfo('template_url'); ?>/images/touch-icon-iphone-retina.png" />
 <link rel="apple-touch-icon" sizes="144x144" href="<?php bloginfo('template_url'); ?>/images/touch-icon-ipad-retina.png" />
 
-<!-- Webmaster tools verification -->
+<!-- Google verification -->
 <meta name="google-site-verification" content="2SG67uWMctkcL0QxFQ1dHbLKzKMG6jiNKHpoARJpkhE" />
+<link rel="author" href="https://plus.google.com/u/0/+JohnAspinall73/posts" />
 
 </head>
 <body class="<?php

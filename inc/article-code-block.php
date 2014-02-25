@@ -5,7 +5,7 @@
 ?>  
 
 <article class="module <?php foreach( get_the_category() as $cat ) { echo $cat->slug . ''; } ?>">
-    <div class="post-meta" aria-hidden="true"><?php the_date(); ?>
+    <div class="post-meta" aria-hidden="true">By <a href="http://seasiderspodcast.co.uk/about">John Aspinall</a> on <?php the_date(); ?>
       <span data-icon="<?php if ($myCat == "Blog") { echo "$"; } else { echo "G"; } ?>"><?php the_category(', '); ?> </span>
     </div>
     <header> 
