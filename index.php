@@ -26,7 +26,7 @@
       
 
 <article class="module <?php the_category_unlinked(''); ?>">
-   <div class="post-meta" aria-hidden="true">By <a href="http://seasiderspodcast.co.uk/about">John Aspinall</a> on <?php the_date(); ?>
+   <div class="post-meta" aria-hidden="true"><?php the_date(); ?>
       <span data-icon="
       <?php 
         if ($myCat == "Blog") { 

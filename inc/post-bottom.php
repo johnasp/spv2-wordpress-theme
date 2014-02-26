@@ -26,5 +26,4 @@
 
 <p>If you have a Blackberry, download the Blackberry Podcast app either through the through your <a href="http://us.blackberry.com/apps/blackberry-apps/podcast/download.html">BlackBerry Browser</a> or through <a href="http://appworld.blackberry.com/webstore/content/13125">BlackBerry App World</a>.</p>
 
- <p class="byline">By John Aspinall</p>
 </section>

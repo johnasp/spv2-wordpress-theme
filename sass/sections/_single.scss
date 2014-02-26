@@ -227,31 +227,51 @@ article {
 #related-posts {
 	figure {
 		background: lighten(#e1e1e1,8%);
-		width: 45%;
-		@include breakpoint(480) {width: 30%;}
+		width: 46.6%;
 		display: inline-block;
 		vertical-align: top;
-		margin-right: $padding/2;
-		margin-bottom: $padding/2;
 		position: relative;
+		margin-bottom: $padding;
+		margin-right: $padding;	
+		&:nth-child(odd) {
+			margin-right: 0;
+		}
+		@include breakpoint(580) {
+			margin-right: $padding!important;
+			width: 30%;
+			&:nth-child(3n+1) {
+				margin-right: 0!important;
+			}
+		}
 	}
 	img {
 		width: 100%;
-		position: relative;
+		position: relative;	
 	}
 	figcaption {
-		padding: 6px;
-		@include font-size(1.4);
-		background: rgba($orange, 0.9s);
+		padding: $padding/2;
+		@include font-size(1.6);
+		background: $colour-primary;
 		color: white;
-		position: absolute;
-		top: 0;
 		font-weight: bold;
-		&:hover {background: $hover;}
-		@include transition (background, 0.2s ease!important);
+		position: relative;
+		&:hover {
+			background: $hover;
+			@include transition (0.2s ease-in!important);
+		}
+		&:hover > span {
+			color: $hover;
+			@include transition (0.2s ease-in!important);
+		}
+		span {
+			position: absolute;
+			top: -0.7em;
+			color: $colour-primary;
+			@include font-size(3.8);
+		}
 	}
 	a {
-		@include font-size(1.4);
+		text-decoration: none;
 	}
 }
 
