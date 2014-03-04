@@ -29,6 +29,9 @@
   @else if $point == 1100 {
     @media (min-width: 1100px)  { @content; }
   }
+  @else if $point == 1300 {
+    @media (min-width: 1300px)  { @content; }
+  }
   @else if $point == 1540 {
     @media (min-width: 1540px)  { @content; }
   }

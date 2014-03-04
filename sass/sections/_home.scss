@@ -39,7 +39,7 @@ article {
 		}
 	}
 }
-div.post-meta {
+.post-meta {
 	color: white;
 	position: absolute;
 	top: -1px;
@@ -56,23 +56,25 @@ div.post-meta {
 	a { 
 		text-decoration: none;
 		color: white;
-		&:hover { text-decoration: underline; }
+		&:hover {
+			text-decoration: underline;
+		}
 	}
 	span {
 		float: right;  
 		padding-right: $padding;
 	}
 }
-article.podcast div.post-meta {
+.podcast .post-meta {
 	background: $colour-shade1;
 }
-article.audio div.post-meta {
+.audio .post-meta {
 	background: $colour-shade2;  
 }
-article.blog div.post-meta {
+.blog .post-meta {
 	background: $colour-shade3;
 }
-article.video div.post-meta {
+.video .post-meta {
 	background: $colour-shade4;
 }
 

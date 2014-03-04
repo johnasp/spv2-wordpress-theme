@@ -10,8 +10,7 @@
 	}
 }
  
-#cta { display: none;
-	@include breakpoint(768) { display: block;}
+#cta { 
 	.listen-follow {
 		padding-top: $padding*2;
 	}
@@ -58,52 +57,45 @@
 			margin-bottom: $padding;
 		}
 		.pp-but { 
-			display:block;
-			margin:0 auto;
-			margin-top:6px;
+			display: block;
+			margin: 0 auto;
+			margin-top: 6px;
 		}
 	}
 }
-#sideSocial {
-	padding-right: 0!important;
-}
-#sideMobile p, #sideSocial p, #previous {
-	@include font-size (1.2);
-	margin-top: 0;
-	text-transform: uppercase;
-	position: relative;
-	padding: 4px $padding;
-	margin-bottom: $padding;
-	background: #000;	
-	color: #fff;
-	line-height: 1.1em;
-	span {
-		@include font-size(2.8);
-		position: absolute;
-		bottom: -14px;
-		left: 10%;
-		color: #000;
-	}
-}	
 
-#sideSocial a, #sideMobile a {
-	display: block;
-	color: #FFF;
-	margin-bottom: $padding;
-	padding-left: 10px;
-	text-decoration :none;
-	position: relative;
-	@include font-size(1.4);
-	font-weight: bold;
-	@include font-stack-body;
-	height: 60px;
-	padding-top: 10px;
-	&:hover, &:focus {
-		background: $hover;
+#socialise {
+	padding-top: $padding*1.8;
+	padding-bottom: 0;
+	font-size: 0;
+	a {
+		display: inline-block;
+		color: #FFF;
+		margin-bottom: $padding;
+		padding-left: 10px;
+		text-decoration :none;
+		position: relative;
+		@include font-size(1.6);
+		font-weight: bold;
+		@include font-stack-body;
+		height: 60px;
+		padding-top: 10px;
+		margin-right: 2%;
+		width: 48%;
+		@include breakpoint(768) {
+			width: 100%;
+			margin-right: 0;
+		}
+		&:hover, &:focus {
+			background: $hover;
+		}
 	}	
 	span {
 		font-weight: normal;
-		@include font-size(5);
+		@include font-size(8);
+		@include breakpoint(768) {
+			@include font-size(6.5);
+		}
 		position: absolute;
 		top: 0;
 		right: 0;

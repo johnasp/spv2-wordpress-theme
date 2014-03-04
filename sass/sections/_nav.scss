@@ -1,7 +1,7 @@
 nav[role="navigation"] {
 	font-size: 0; /* inline-block fix  */
 	padding: 0 $padding/2;
-	margin-bottom: $padding/2;
+	margin-bottom: $padding;
 	position: relative;
 	@include breakpoint(768) {
 	 	padding: 0 $padding;

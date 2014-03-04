@@ -2,13 +2,7 @@
  
 <div class="grid group"> 
 
-<?php include(TEMPLATEPATH."/inc/cta.php");?>
-
 <section id="home" class="grid-1-2" role="main">
-
-<!-- Only visibile on mobile screens --> 
-<?php include(TEMPLATEPATH."/inc/mobile-only-subscribe.php");?>
-
 
 <?php 
   $cat = get_the_category(); 
@@ -21,9 +15,7 @@
 <?php $count = 0; ?>
 <?php while (have_posts()) : the_post(); ?>
 <?php $count++; ?>
-<?php if ($count == 1) : ?>
-
-      
+<?php if ($count == 1) : ?>   
 
 <article class="module <?php the_category_unlinked(''); ?>">
    <div class="post-meta" aria-hidden="true"><?php the_date(); ?>
@@ -114,6 +106,10 @@
 
 </section>
 
+<?php include(TEMPLATEPATH."/inc/cta.php");?>
+
 <?php get_sidebar(); ?> 
+
+
 
 <?php get_footer(); ?> 

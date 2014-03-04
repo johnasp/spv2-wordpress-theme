@@ -38,18 +38,20 @@
 	padding-right: $padding;
 }
 @include breakpoint(mid) {
-	.grid-1-2 {width: 75%;}
+	.grid-1-2 {width: 100%;}
 	.grid-1-4 {width: 25%;}
 	#sideMobile, #sideSocial {width: 100%;}
 	#sideMobile { padding-right:0;}
 	#sidebar { width: 75%;}
 }
-@include breakpoint(midish) {
-	.grid-1-2 {width: 66.66%;}
-	.grid-1-4 {width: 33.33%;}
-	#sideMobile, #sideSocial {width: 50%;}
-	#sideMobile{ padding-right: $padding;}
-	#sidebar { width: 66.66%}
+@include breakpoint(1024) {
+	.grid-1-2 {width: 75%;}
+	#sidebar { width: 25%;}
+}
+@include breakpoint(1300) {
+	.grid-1-2 {width: 60%;}
+	#cta { width: 20%;}
+	#sidebar { width: 20%;}
 }
 .module {
 	background: #fff;

@@ -2,12 +2,7 @@
  
 <div class="grid group"> 
 
-<?php include(TEMPLATEPATH."/inc/cta.php");?>
-
 <section id="home" class="grid-1-2" role="main">
-
-<!-- Only visibile on mobile screens --> 
-<?php include(TEMPLATEPATH."/inc/mobile-only-subscribe.php");?>
 
 <!-- Get new pod post into a custom field into a var --> 
 
@@ -68,6 +63,8 @@
 ?>
 
 </section>
+
+<?php include(TEMPLATEPATH."/inc/cta.php");?>
 
 <?php get_sidebar(); ?> 
 

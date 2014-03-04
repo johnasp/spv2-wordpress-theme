@@ -21,23 +21,28 @@
 </section>
 
 
-<section id="sideMobile" class="grid-1-2">
+<section id="socialise" class="module podcast">
+
+    <div class="post-meta" aria-hidden="true">Subscribe & Follow</div>
+
   <a href="https://itunes.apple.com/gb/podcast/blackpool-fc-podcast-seasiders/id388664312" class="apple"><span aria-hidden="true" data-icon="0"></span>iTunes</a>
+
   <a href="http://feeds.feedburner.com/seasiderspodcast" class="rss"><span aria-hidden="true" data-icon="A"></span>RSS</a>
- <!-- <a href="http://feeds.feedburner.com/seasiderspodcast" class="android"><span aria-hidden="true" data-icon="/"></span>Android</a>
-  <a href="http://feeds.feedburner.com/seasiderspodcast" class="blackberry"><span aria-hidden="true" data-icon=":"></span>Blackberry</a>
-  <a href="http://feeds.feedburner.com/seasiderspodcast" class="windows8"><span aria-hidden="true" data-icon="j"></span>Windows</a>-->
-</section>
 
-<section id="sideSocial" class="grid-1-2">
+ <a href="http://feeds.feedburner.com/seasiderspodcast" class="android"><span aria-hidden="true" data-icon="/"></span>Android</a>
+
+  <a href="http://feeds.feedburner.com/seasiderspodcast" class="windows8"><span aria-hidden="true" data-icon="J"></span>Windows</a>
+
   <a href="https://www.facebook.com/SeasidersPodcast" class="facebook"><span aria-hidden="true" data-icon="1"></span>Facebook</a>
+
   <a href="https://twitter.com/SeasidersPod" class="twitter"><span aria-hidden="true" data-icon="4"></span>Twitter</a>
-  <!--<a href="https://plus.google.com/113085745119575612415/" class="google"><span aria-hidden="true" data-icon="?"></span>Google+</a>-->
+
+  <a href="https://plus.google.com/+SeasiderspodcastCoUk" class="google"><span aria-hidden="true" data-icon="?"></span>Google+</a>
 </section>
 
-<section id="side-ad" class="module partner">
+<!--<section id="side-ad" class="module partner">
   <a href="http://www.tkqlhce.com/click-7085463-10464818" target="_top">
   <img src="http://www.awltovhc.com/image-7085463-10464818" width="300" height="250" alt="Audiobook Downloads at Audible.co.uk" border="0" ></a>
 </section>
-
+-->
 </aside>

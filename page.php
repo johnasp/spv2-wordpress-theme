@@ -2,8 +2,6 @@
  
 <div class="grid group"> 
 
-<?php include(TEMPLATEPATH."/inc/cta.php");?>
-
 <section id="home" class="grid-1-2" role="main">
 
 <!-- Only visibile on mobile screens --> 
@@ -41,6 +39,8 @@ if ( is_page('60') ) {
 ?>
 
 </section>
+
+<?php include(TEMPLATEPATH."/inc/cta.php");?>
 
 <?php get_sidebar(); ?> 
 
