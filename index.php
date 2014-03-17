@@ -68,9 +68,10 @@
     </header>   
 </article>
 
+<div class="col col-1">
+
 <?php elseif ($count == 2) : ?>      
   
-  <?php include(TEMPLATEPATH."/inc/loop-advert.php");?> 
   <?php include(TEMPLATEPATH."/inc/article-code-block.php");?>
           
 <?php elseif ($count == 3) : ?> 
@@ -87,20 +88,49 @@
 
 <?php elseif ($count == 6) : ?>  
 
-  <?php include(TEMPLATEPATH."/inc/loop-advert.php");?> 
   <?php include(TEMPLATEPATH."/inc/article-code-block.php");?>  
 
 <?php elseif ($count == 7) : ?>  
 
-  <?php include(TEMPLATEPATH."/inc/article-code-block.php");?> 
+  <?php include(TEMPLATEPATH."/inc/article-code-block.php");?>   
 
-<?php else : ?>
-   
-<?php include(TEMPLATEPATH."/inc/article-code-block.php");?>  
+</div><!-- col-1 -->
 
-  <?php endif; ?>
+<div class="col col-2">
+
+<?php elseif ($count == 8) : ?>      
+
+  <?php include(TEMPLATEPATH."/inc/article-code-block.php");?>
+          
+<?php elseif ($count == 9) : ?> 
+
+  <?php include(TEMPLATEPATH."/inc/article-code-block.php");?>  
+
+<?php elseif ($count == 10) : ?>      
+
+  <?php include(TEMPLATEPATH."/inc/article-code-block.php");?>
+          
+<?php elseif ($count == 11) : ?> 
+
+  <?php include(TEMPLATEPATH."/inc/article-code-block.php");?>  
+
+<?php elseif ($count == 12) : ?>      
+
+  <?php include(TEMPLATEPATH."/inc/article-code-block.php");?>
+          
+<?php elseif ($count == 13) : ?> 
+
+  <?php include(TEMPLATEPATH."/inc/article-code-block.php");?>    
+
+
+</div> <!-- col-2 -->
+
+
+<?php endif; ?>
 <?php endwhile; ?>
 <?php endif; ?>
+
+
 
 <?php include(TEMPLATEPATH."/inc/pagination.php");?> 
 
