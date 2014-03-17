@@ -37,15 +37,23 @@
 
           </header>
 
-
           <?php the_content(); ?>  
+
+         <!-- <nav class="prev-next group">
+            <div class="prev">
+              <?php //previous_post_link( '%link', '%title' ); ?>
+            </div>
+
+            <div class="next">
+              <?php //next_post_link( '%link', '%title' ); ?>
+            </div>
+          </nav>-->
 
           <?php 
            if  ($newPod == "true") { 
               include(TEMPLATEPATH."/inc/podcast-only.php");
            }
           ?>
-
           <?php include(TEMPLATEPATH."/inc/post-bottom.php");?>
           
       </article>

@@ -9,8 +9,7 @@
       <span data-icon="<?php if ($myCat == "Blog") { echo "$"; } else { echo "G"; } ?>"><?php the_category(', '); ?> </span>
     </div>
     <header> 
-      <a href="<?php the_permalink(); ?>"><h2><?php the_title(); ?></h2></a>
-        
+      <a href="<?php the_permalink(); ?>"><h2><?php the_title(); ?></h2></a> 
 
         <?php the_excerpt(); ?>  
 

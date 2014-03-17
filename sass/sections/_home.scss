@@ -1,5 +1,5 @@
 body {
-	background: url(../images/bubbles.jpg) top;
+	background: darken($lightGrey,10%);
 	overflow-x: hidden; /*horiz scroll remove*/
 	a.latest {
 		background: $link;
@@ -25,7 +25,6 @@ footer {
 }
 
 article {
-	border-bottom: 1px solid darken($midGrey,20%); 
 	a.more {
 		background: darken($lightGrey, 40%);
 		border-bottom: 1px solid $darkGrey;
@@ -219,7 +218,9 @@ article {
 	text-align: center;
 	background: none;
 	font-weight: bold;
-	padding-top:0;
+	padding-top: 0;
+	clear: left;
+	margin-bottom: $padding;
 	p {
 		color: #fff;
 		@include font-size(2.8);

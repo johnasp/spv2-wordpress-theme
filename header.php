@@ -72,9 +72,8 @@ if ( in_category( 'podcasts' ) &&  !is_home() )   {
 ?>
 ">
 
-
-<header class="top-banner group">   
-<div id="logo" class="grid-half">
+<header class="top-banner">   
+<div>
 	<p>Seasiders P<span class="screen-reader-text">o</span><span class="tower-logo" data-icon="<"></span>dcast <span class="strapline">An independent Blackpool FC fans podcast</span></p>
 </div>  
 

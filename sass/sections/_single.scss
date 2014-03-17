@@ -146,7 +146,7 @@ article {
 		h1, a.latest {
 			@include font-stack-headers;
 			text-decoration: none;
-			@include font-size(1.6);
+			@include font-size(2.4);
 			color: #fff;
 		  	background: rgba($orange, 0.5);	 
 			padding: 6px;
@@ -249,12 +249,7 @@ article {
 		position: relative;	
 	}
 	figcaption {
-		padding: $padding/2;
-		@include font-size(1.6);
-		background: $colour-primary;
-		color: white;
-		font-weight: bold;
-		position: relative;
+		@include archive-button();
 		&:hover {
 			background: $hover;
 			@include transition (0.2s ease-in!important);
@@ -265,13 +260,28 @@ article {
 		}
 		span {
 			position: absolute;
-			top: -0.7em;
+			top: -0.4em;
 			color: $colour-primary;
 			@include font-size(3.8);
 		}
 	} 
 	a {
 		text-decoration: none;
+		line-height: 1.2em!important;
+	}
+}
+.prev-next {
+	a {
+		@include archive-button();
+		padding: $padding/3;
+	}
+	.prev {
+		float:left; 
+		margin-bottom: 20px;
+	}
+	.next {
+		float:right;
+		padding:0;
 	}
 }
 

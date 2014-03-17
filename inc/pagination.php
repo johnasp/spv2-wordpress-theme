@@ -1,4 +1,3 @@
-<nav id="pagination" class="module"> 
-    <p>Want more?  Fill yer boots!</p>
+<nav id="pagination" class="group"> 
     <?php my_pagination(); ?>
 </nav>

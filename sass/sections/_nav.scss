@@ -1,14 +1,12 @@
 nav[role="navigation"] {
 	font-size: 0; /* inline-block fix  */
 	padding: 0 $padding/2;
-	margin-bottom: $padding;
+	margin-bottom: $padding/2;
 	position: relative;
 	@include breakpoint(768) {
 	 	padding: 0 $padding;
-		margin: $padding/2 0 $padding 0;
 	}
 	a { 
-		@include transition(width 0.3s ease);
 		@include font-size(1.8);
 		width: 49.99%;
 		border: 1px solid $colour-primary;
@@ -17,33 +15,24 @@ nav[role="navigation"] {
 		&:nth-child(odd) {margin-right: $gutter;}*/
 		text-decoration: none;
 		padding: 9px 0 6px 0;
-		color: white;
+		color: darken($darkOrange,30%);
 		text-align: center;
-		display:inline-block; /* inline-block inserts element spaces */
+		display: inline-block; /* inline-block inserts element spaces */
 		text-transform: uppercase;	     
-		@include letterpress(#000);
 		@include font-stack-nav;
-		background: $colour-primary; 
+		background: lighten($colour-primary, 10%); 
 		position: relative;
-		box-shadow: inset 0px 0px 3px 2px rgba($darkOrange, 0.7);
+		box-shadow: inset 0px 0px 2px 2px rgba($darkOrange, 0.7);
 		z-index: 1;
-/*		&:after {
-			content: "";
-			@include background(linear-gradient(rgba(black,0.5), rgba(black, 0.0)));
-	    top: 0;
-			left: 0;
-			width: 100%;
-			position: absolute;
-			height: 50%;
-			z-index:-1;
-		}	*/	
 		&:hover, &:focus {
 			background: $hover;
-			box-shadow: inset 0px 0px 3px 2px rgba(darken($hover,30%), 0.5);
+			box-shadow: inset 0px 0px 2px 2px rgba(darken($hover,30%), 0.5);
 			border: 1px solid darken($hover,20%);
+			color: white;
 		}
 		&:active {
 			background: lighten($active, 10%);
+			color: white!important;
 		}		
 	 .home &.home,
 	 .seasiders-podcast &.podcasts,
@@ -66,7 +55,6 @@ nav[role="navigation"] {
 			}
 		}
 		@include breakpoint (580) {
-		@include transition(width 0.3s ease);
 /*			&:nth-child(-n+6) {margin-bottom: 0;}
 			&:nth-child(odd) {margin-right: 0;}
 			&:nth-child(1) {margin-bottom: $gutter/2;}
@@ -75,7 +63,6 @@ nav[role="navigation"] {
 			margin: 0;
 		}
 		@include breakpoint (1024) {
-		@include transition(width 0.3s ease);
 			@include font-size(2.0);
 			width: 11.6%; 
 			margin-right : 1%;

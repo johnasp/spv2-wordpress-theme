@@ -1,98 +1,33 @@
-#logo {
-	float: left;
-	width: 60%;
-	@include breakpoint (1024) {
-		width: 45%;
-	}
-	.tower-logo {text-indent: 50000px;}
-}
-#box-ad {
-	float: right;
-	padding-right: $gutter;
-		@include breakpoint (1024) {
-			display: none;
-	}
-}
-#banner-ad {
-	display:none;
-	@include breakpoint (1024) {
-		display: inline;
-		float: right;
-		width: 30%;
-		padding-right:0;
-	}
-	@include breakpoint (1024) {
-		width: 55%;
+.top-banner {
+	background: black;
+	padding: $padding/4 $padding $padding $padding ;
+	p  {
+		margin: 0;
+		color: #fff;
+		@include font-stack-headers;
+		text-transform: uppercase;
+		@include font-size(3.8);
+		@include breakpoint(768) {
+			padding-left: 1em;
+		}
+		@include breakpoint(1540) {
+			padding-left: 1.3em;
+		}
 	}
 }
 .strapline {
-	display: none;
-	text-shadow: none;
+	display: block;
+	text-shadow: none!important;
 	color: $colour-primary;
 	padding-left:0;
-	@include font-size(1.8);
-	@include transition(font-size 0.3s ease);
-	@include breakpoint(768) {
-		display:block;
-		line-height:0.6em;
-		@include transition(font-size 0.3s ease);
-	}
-	@include breakpoint(1540) {
-		@include font-size(2.6);
-		line-height:0.7em;
-		@include transition(font-size 0.3s ease);
-	}
+	@include font-size(2.0);
+	line-height:0.1em;
+
 }	
 .tower-logo {
+	text-indent: 50000px;
 	font-weight: normal;
 	@include font-size(3.2);;
 	padding: 0 3px 0 2px;
 	color: $colour-primary;
-	@include breakpoint(580) {
-		@include font-size(3.8);
-	}
-	@include breakpoint(768) {
-		padding: 0 4px 0 2px;
-	}
-	@include breakpoint(1540) {
-		@include font-size(5.4);
-	}
-}
-
-.top-banner {
-	width: $width;
-	margin: 0 auto;
-	@include breakpoint(768) {
-		width: $widthMid;
-	} 
-	@include breakpoint(1024) {
-		width: $widthMid;
-	} 
-	img {
-		float: right;
-		margin-top:12px;
-		margin-bottom:12px;
-	}
-	p  {
-		color: #fff;
-		@include font-stack-headers;
-		text-transform: uppercase;
-		text-shadow: 1px 1px 1px #000;
-		margin: 8px 0 0 0;
-		padding-left: $gutter;
-		font-weight: normal;
-		display: inline-block;
-		@include font-size(3.8);
-		line-height:0.9em;
-		@include breakpoint(580) {
-			@include font-size(4.4);
-			width:100%!important;
-			@include transition(font-size 0.3s ease);
-		}
-		@include breakpoint(1540) {
-			@include font-size(6.4);
-			width:100%!important;
-			@include transition(font-size 0.3s ease);
-		}
-	}
 }

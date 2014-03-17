@@ -20,3 +20,13 @@
     3px 4px 5px rgba(0,0,0,0.3);
 }
 
+@mixin archive-button() {
+    @include font-size(1.6);
+    padding: $padding/2;
+    background: $colour-primary;
+    color: white;
+    font-weight: bold;
+    position: relative;
+    text-decoration: none;
+}
+

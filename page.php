@@ -4,9 +4,6 @@
 
 <section id="home" class="grid-1-2" role="main">
 
-<!-- Only visibile on mobile screens --> 
-<?php include(TEMPLATEPATH."/inc/mobile-only-subscribe.php");?>
-
 <!-- Start Wordpress Loop -->
 
 <?php 

@@ -22,7 +22,19 @@
 .grid-3-4{
 	width: 75%;
 }  
-
+.col {
+	width: 100%;
+	@include breakpoint(480) {
+		width: 48%;
+	}
+	margin-bottom: $padding;
+	float: left;
+}
+.col-1 {
+	margin-right: 4%;
+}
+.col-2 {
+}
 [class*='grid-'] {
 	float:left;
 	padding-right: $padding/2;
@@ -36,6 +48,9 @@
 }
 #sideMobile{
 	padding-right: $padding;
+}
+@include breakpoint(480) {
+	.halved {width: 50%;}
 }
 @include breakpoint(mid) {
 	.grid-1-2 {width: 100%;}
@@ -61,5 +76,8 @@
 	width: 100%;
 	@include font-size(1.6);
 	position: relative;
+	border-radius: 3px;
+	border-bottom: 1px solid darken($lightGrey,20%); 
+	border-right: 1px solid darken($lightGrey,20%); 
 }
 
