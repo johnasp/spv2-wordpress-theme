@@ -51,7 +51,7 @@
 
           <section id="related-posts">
 
-              <h3>Related posts</h3>
+              <h3>Related pods & posts<span data-icon="@"></span></h3>
               <?php
               //for use in the loop, list 6 post titles related to first tag on current post
               $tags = wp_get_post_tags($post->ID);
