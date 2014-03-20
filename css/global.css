@@ -1863,6 +1863,24 @@ body.wp-page header h1 {
   top: 0;
 }
 
+/* line 13, ../sass/sections/_page.scss */
+.all-pods a {
+  background: #ff8000;
+  color: black;
+  padding: 6px;
+  line-height: 2.1em;
+  text-decoration: none;
+  margin: 0 10px 10px 0;
+  display: inline-block;
+  font-size: 15px;
+  font-size: 1.5rem;
+}
+/* line 22, ../sass/sections/_page.scss */
+.all-pods a:hover {
+  background: #00aaff;
+  color: white;
+}
+
 /* line 1, ../sass/sections/_cta.scss */
 #cta-ad-250 {
   background: #FFF;

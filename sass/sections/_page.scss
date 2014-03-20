@@ -9,3 +9,19 @@ body.wp-page {
 		}
 	}
 } 
+.all-pods {
+	a {
+		background: $colour-primary;
+		color: black;
+		padding: 6px;
+		line-height: 2.1em;
+		text-decoration: none;
+		margin: 0 10px 10px 0;
+		display: inline-block;
+		@include font-size (1.5);
+		&:hover {
+			background: $hover;
+			color: white;
+		}
+	}
+}

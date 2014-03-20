@@ -20,12 +20,13 @@
           <?php the_content(); ?>  
 
 <!-- Display list of shows only for Podcasts page -->
+<section class="all-pods">
 <?php
 if ( is_page('60') ) { 
  include(TEMPLATEPATH."/inc/list-all-podcasts.php");
 } 
 ?>
-
+</section>
 <?php include(TEMPLATEPATH."/inc/post-bottom.php");?>
 
 </article>
