@@ -1,4 +1,5 @@
-<?php
+<?php  
+
 
 // ADD FEATURED IMAGE SUPPORT
 add_theme_support('post-thumbnails');
@@ -122,6 +123,17 @@ return $content;
 }
 add_filter('the_excerpt_rss', 'insertThumbnailRSS');
 add_filter('the_content_feed', 'insertThumbnailRSS');
+
+// ADD CUSTOM POST TYPE TO THE HOMEPAGE AND FEED http://justintadlock.com/archives/2010/02/02/showing-custom-post-types-on-your-home-blog-page
+
+add_filter( 'pre_get_posts', 'my_get_posts' );
+
+function my_get_posts( $query ) {
+
+	if ( ( is_home() && $query->is_main_query() ) || is_feed() )
+		$query->set( 'post_type', array( 'post', 'page', 'podcast', 'video', 'audio' ) );
+	return $query;
+}
 
 
 ?>
