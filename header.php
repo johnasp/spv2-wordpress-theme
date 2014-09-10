@@ -101,7 +101,7 @@ if ( in_category( 'podcasts' ) &&  !is_home() )   {
   <a href="<?php echo site_url(); ?>/live" class="live"><span aria-hidden="true" data-icon="Q"></span>Live </a>
   <a href="<?php echo site_url(); ?>/subscribe" class="subscribe"><span aria-hidden="true" data-icon="o"></span>Susbscribe </a>
   <a href="<?php echo site_url(); ?>/blackpool-fc" class="blackpool-fc"><span aria-hidden="true" data-icon="<"></span>Blackpool FC </a>
-  <a href="<?php echo site_url(); ?>/donate" class="donate"><span aria-hidden="true" data-icon="I"></span>Donate </a>
+  <a href="<?php echo site_url(); ?>/shop" class="donate"><span aria-hidden="true" data-icon="I"></span>Shop </a>
   <a href="<?php echo site_url(); ?>/about" class="about"><span aria-hidden="true" data-icon="="></span>About </a>
 </nav> 
 

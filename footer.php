@@ -8,6 +8,8 @@
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
 <script src="<?php bloginfo('template_url'); ?>/js/jquery.fitvids.min.js"></script>
 <script src="<?php bloginfo('template_url'); ?>/js/global.js"></script>
+<script src="<?php bloginfo('template_url'); ?>/js/masonry.pkgd.min.js"></script>
+
 
 <script type="text/javascript">
 

@@ -6,7 +6,10 @@
 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
       <article id="single" class="module audio">  
-          <div class="post-meta" aria-hidden="true" >By <a href="http://seasiderspodcast.co.uk/about" rel="nofollow author">John Aspinall</a> on <?php the_date(); ?><span data-icon="G">Audio </span></div>
+          <div class="post-meta" aria-hidden="true" >By 
+            <a href="http://seasiderspodcast.co.uk/about" rel="nofollow author">John Aspinall</a> 
+            on <?php the_date(); ?><span data-icon="G">Audio </span>
+          </div>
 
           <header>
               <h1><?php the_title(); ?></h1> 

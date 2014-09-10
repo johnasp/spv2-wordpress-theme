@@ -6,15 +6,31 @@
 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
       <article id="single" class="module podcast">  
-           <div class="post-meta" aria-hidden="true" >By <a href="http://seasiderspodcast.co.uk/about" rel="nofollow author">John Aspinall</a> on <?php the_date(); ?><span data-icon="G">Podcast </span></div>
+      <div class="post-meta" aria-hidden="true" >
+        By <a href="http://seasiderspodcast.co.uk/about" rel="nofollow author">John Aspinall</a> 
+        on <?php the_date(); ?><span data-icon="G">Podcast </span>
+      </div>
+     
+      <section class="main">
+          <h1><?php the_title(); ?></h1> 
+          <?php the_post_thumbnail('full'); ?>
+          <?php the_powerpress_content(); ?>
+          <p><?php the_field('ep_description'); ?></p>
 
-          <header>
-              <h1><?php the_title(); ?></h1> 
-              <?php the_post_thumbnail('full'); ?>
-          </header>
+          <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+          <!-- SP - Body Copy -->
+          <ins class="adsbygoogle"
+               style="display:inline-block;width:468px;height:60px"
+               data-ad-client="ca-pub-0301430055096164"
+               data-ad-slot="9710668322"></ins>
+          <script>
+          (adsbygoogle = window.adsbygoogle || []).push({});
+          </script>
+
+
+      </section>
 
       <section class="match">
-
       <?php
          $rows = get_field('last_match_review');
           if($rows) {

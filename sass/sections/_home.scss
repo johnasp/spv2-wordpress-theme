@@ -23,7 +23,6 @@ body {
 footer {
 	clear:both;
 }
-
 article {
 	a.more {
 		background: darken($lightGrey, 40%);
@@ -76,16 +75,13 @@ article {
 .video .post-meta {
 	background: $colour-shade4;
 }
-
-
 .post span {
 	position: absolute;
 	top: -1px;
-	right: $padding;
+	right: 0;
 	color: #FFF;
 	font-size: 14px;
 }
-
 .home-ad-block {
 	padding: $padding*2 0 $padding $padding;
 	@include breakpoint(480) {
@@ -253,5 +249,8 @@ button#hide {
 		padding: 0;
 		margin-top: 3px;
 	} 
+}
+section article .module {
+	width: 300px!important;
 }
 
