@@ -11,13 +11,11 @@
             on <?php the_date(); ?><span data-icon="%">Video </span>
           </div>
 
-          <header>
-              <h1><?php the_title(); ?></h1> 
-              <?php the_post_thumbnail('full'); ?>
-          </header>
-    
-          <p><?php the_field('audio_description'); ?> <p>    
-          <?php the_field('audio_embed_code'); ?> 
+          <h1><?php the_title(); ?></h1> 
+          <?php the_post_thumbnail('full'); ?>
+          <p><?php the_field('video_description'); ?> <p>
+          <?php include(TEMPLATEPATH."/inc/adsense-body.php");?>
+          <?php the_field('video_embed_code'); ?> 
 
           <section id="related-posts">
             <?php include(TEMPLATEPATH."/inc/related-posts.php"); ?>

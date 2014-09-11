@@ -1,5 +1,4 @@
 <section id="related-posts">
-
   <h3>Related pods & posts<span data-icon="@"></span></h3>
   <?php
   //for use in the loop, list 6 post titles related to first tag on current post
@@ -16,7 +15,6 @@
   if( $my_query->have_posts() ) {
   while ($my_query->have_posts()) : $my_query->the_post(); ?>
 
-
   <figure>
     <a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>">
     <?php the_post_thumbnail('thumbnail'); ?>
@@ -30,6 +28,5 @@
   wp_reset_query();
   }
   ?>
-
 </section>
 
