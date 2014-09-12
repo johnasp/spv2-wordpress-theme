@@ -135,5 +135,138 @@ function my_get_posts( $query ) {
 	return $query;
 }
 
+// CPT declerations
 
+add_action('init', 'cptui_register_my_cpt_video');
+function cptui_register_my_cpt_video() {
+register_post_type('video', array(
+'label' => 'Videos',
+'description' => 'BFC related videos.',
+'public' => true,
+'yarpp_support' => true,
+'show_ui' => true,
+'show_in_menu' => true,
+'capability_type' => 'post',
+'map_meta_cap' => true,
+'hierarchical' => false,
+'rewrite' => array('slug' => 'video', 'with_front' => true),
+'query_var' => true,
+'supports' => array('title','editor','excerpt','trackbacks','custom-fields','comments','revisions','thumbnail','author','page-attributes','post-formats'),
+'labels' => array (
+  'name' => 'Videos',
+  'singular_name' => 'Video',
+  'menu_name' => 'Videos',
+  'add_new' => 'Add Video',
+  'add_new_item' => 'Add New Video',
+  'edit' => 'Edit',
+  'edit_item' => 'Edit Video',
+  'new_item' => 'New Video',
+  'view' => 'View Video',
+  'view_item' => 'View Video',
+  'search_items' => 'Search Videos',
+  'not_found' => 'No Videos Found',
+  'not_found_in_trash' => 'No Videos Found in Trash',
+  'parent' => 'Parent Video',
+)
+) ); }
+
+add_action('init', 'cptui_register_my_cpt_audio');
+function cptui_register_my_cpt_audio() {
+register_post_type('audio', array(
+'label' => 'Audio Clips',
+'description' => 'Audio clips, not podcasts. ',
+'public' => true,
+'yarpp_support' => true,
+'show_ui' => true,
+'show_in_menu' => true,
+'capability_type' => 'post',
+'map_meta_cap' => true,
+'hierarchical' => false,
+'rewrite' => array('slug' => 'audio', 'with_front' => true),
+'query_var' => true,
+'supports' => array('title','editor','excerpt','trackbacks','custom-fields','comments','revisions','thumbnail','author','page-attributes','post-formats'),
+'labels' => array (
+  'name' => 'Audio Clips',
+  'singular_name' => 'Audio',
+  'menu_name' => 'Audio',
+  'add_new' => 'Add Audio',
+  'add_new_item' => 'Add New Audio',
+  'edit' => 'Edit',
+  'edit_item' => 'Edit Audio',
+  'new_item' => 'New Audio',
+  'view' => 'View Audio',
+  'view_item' => 'View Audio',
+  'search_items' => 'Search Audio Clips',
+  'not_found' => 'No Audio Clips Found',
+  'not_found_in_trash' => 'No Audio Clips Found in Trash',
+  'parent' => 'Parent Audio',
+)
+) ); }
+
+add_action('init', 'cptui_register_my_cpt_blog');
+function cptui_register_my_cpt_blog() {
+register_post_type('blog', array(
+'label' => 'Blog',
+'description' => '',
+'public' => true,
+'yarpp_support' => true,
+'show_ui' => true,
+'show_in_menu' => true,
+'capability_type' => 'post',
+'map_meta_cap' => true,
+'hierarchical' => false,
+'rewrite' => array('slug' => 'blog', 'with_front' => true),
+'query_var' => true,
+'supports' => array('title','editor','excerpt','trackbacks','custom-fields','comments','revisions','thumbnail','author','page-attributes','post-formats'),
+'labels' => array (
+  'name' => 'Blog',
+  'singular_name' => 'blog',
+  'menu_name' => 'Blog',
+  'add_new' => 'Add blog',
+  'add_new_item' => 'Add New blog',
+  'edit' => 'Edit',
+  'edit_item' => 'Edit blog',
+  'new_item' => 'New blog',
+  'view' => 'View blog',
+  'view_item' => 'View blog',
+  'search_items' => 'Search Blog',
+  'not_found' => 'No Blog Found',
+  'not_found_in_trash' => 'No Blog Found in Trash',
+  'parent' => 'Parent blog',
+)
+) ); }
+
+add_action('init', 'cptui_register_my_cpt_podcast');
+function cptui_register_my_cpt_podcast() {
+register_post_type('podcast', array(
+'label' => 'Podcasts',
+'description' => 'Episodes of the Seasiders Podcast',
+'public' => true,
+'yarpp_support' => true,
+'show_ui' => true,
+'show_in_menu' => true,
+'capability_type' => 'post',
+'map_meta_cap' => true,
+'hierarchical' => false,
+'rewrite' => array('slug' => 'podcast', 'with_front' => true),
+'query_var' => true,
+'supports' => array('title','editor','excerpt','trackbacks','custom-fields','comments','revisions','thumbnail','author','page-attributes','post-formats'),
+'taxonomies' => array('post_tag','season'),
+'labels' => array (
+  'name' => 'Podcasts',
+  'singular_name' => 'Podcast',
+  'menu_name' => 'Podcasts',
+  'add_new' => 'Add Podcast',
+  'add_new_item' => 'Add New Podcast',
+  'edit' => 'Edit',
+  'edit_item' => 'Edit Podcast',
+  'new_item' => 'New Podcast',
+  'view' => 'View Podcast',
+  'view_item' => 'View Podcast',
+  'search_items' => 'Search Podcasts',
+  'not_found' => 'No Podcasts Found',
+  'not_found_in_trash' => 'No Podcasts Found in Trash',
+  'parent' => 'Parent Podcast',
+)
+) ); }
 ?>

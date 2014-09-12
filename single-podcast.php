@@ -11,36 +11,32 @@
         on <?php the_date(); ?><span data-icon="G">Podcast </span>
       </div>
      
-      <section class="main">
-          <h1><?php the_title(); ?></h1> 
-          <?php the_post_thumbnail('full'); ?>
-          <?php the_powerpress_content(); ?>
-          <p><?php the_field('ep_description'); ?></p>
-          <?php include(TEMPLATEPATH."/inc/adsense-body.php");?>
-      </section>
+      <?php      
+          include(TEMPLATEPATH."/inc/main.php");
+          include(TEMPLATEPATH."/inc/last-match.php");
 
-      <?php include(TEMPLATEPATH."/inc/last-match.php");?>
-
-      <?php
           $tt = get_field("tangerinetopics");
           if (empty($tt)) {
+         
           } 
           else {
             include(TEMPLATEPATH."/inc/tangerine-topics.php"); 
           }
-      ?>
 
-      <?php
           $lsb = get_field("listeners_soapbox_question");
           if (empty($lsb)) {
+         
           } 
           else {
             include(TEMPLATEPATH."/inc/soapbox.php"); 
-          }
-      ?>      
+          }    
 
-      <?php include(TEMPLATEPATH."/inc/related-posts.php"); ?>
-      <?php include(TEMPLATEPATH."/inc/post-bottom.php");?>
+          include(TEMPLATEPATH."/inc/related-posts.php"); 
+
+          the_tags( 'Tagged as ', ' ',  $after );
+
+          include(TEMPLATEPATH."/inc/post-bottom.php");
+      ?>
           
       </article>
 
