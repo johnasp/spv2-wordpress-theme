@@ -4,7 +4,7 @@
     if($rows) {
       foreach($rows as $row)
       {
-        echo '<h3>' . $row['result'] . '<span aria-hidden="true" data-icon="&lt;"></h3>';
+        echo '<h3>' . $row['result'] . '</h3>';
         echo '<h4>Result:</h4>' . $row['result'];
         echo '<h4>Team:</h4>' . $row['team'];
         echo '<h4>Subs:</h4>' . $row['subs'];

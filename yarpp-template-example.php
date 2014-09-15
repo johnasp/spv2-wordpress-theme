@@ -1,16 +1,18 @@
 <?php 
 /*
-YARPP Template: Simple
+YARPP Template: Bollocks
 Author: mitcho (Michael Yoshitaka Erlewine)
 Description: A simple example YARPP template.
 */
 ?><h3>Related Posts</h3>
 <?php if (have_posts()):?>
-<ol>
-	<?php while (have_posts()) : the_post(); ?>
-	<li><a href="<?php the_permalink() ?>" rel="bookmark">BOLLCOKS<?php the_title(); ?></a><!-- (<?php the_score(); ?>)--></li>
-	<?php endwhile; ?>
-</ol>
+  <figure>
+    <a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>">
+    <?php the_post_thumbnail('thumbnail'); ?>
+    <figcaption><span aria-hidden="true" data-icon="8"></span><?php the_title(); ?></figcaption>
+  </a>
+  </figure>
+
 <?php else: ?>
 <p>No related posts.</p>
 <?php endif; ?>

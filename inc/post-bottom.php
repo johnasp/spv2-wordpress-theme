@@ -1,5 +1,5 @@
 <section class="donate">
-<h3>Donate<span aria-hidden="true" data-icon="I"></h3>
+<h3>Donate</h3>
 <p>It costs cold hard cash to produce this show,  if you enjoy it, please consider making a small donation towards our running costs - every little helps!</p>
 
 <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
@@ -13,7 +13,7 @@
 </section>
 
 <section class="blogSocial">  
-<h3>Subscribe & Follow<span aria-hidden="true" data-icon="="></h3>
+<h3>Subscribe & Follow</h3>
 <p>Listen and subscribe to the Seasiders Podcast on your mobile device and get each show delivered direct to your phone's podcast listening software. Click the iTunes icon for Apple devices and RSS icon for Android devices.</p>
 
 <div class="icons">

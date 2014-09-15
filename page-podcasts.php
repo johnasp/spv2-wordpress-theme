@@ -26,29 +26,38 @@ Template Name: Podcasts
           <?php the_content(); ?>  
 
           <section class="all-pods">
+            
+            <h4>Season 2014/15 - Championship</h4>
+            <?php $recent = new WP_Query("season=2014/15&showposts=500");; while($recent->have_posts()) : $recent->the_post();?>
+            <a href="<?php the_permalink() ?>" rel="bookmark">
+              <?php the_title(); ?>
+            </a>
+            <?php endwhile; ?> 
+
+
             <h4>Season 2013/14 - Championship</h4>
-            <?php $recent = new WP_Query("cat=296&showposts=500"); while($recent->have_posts()) : $recent->the_post();?>
+            <?php $recent = new WP_Query("season=2013/14&showposts=500");; while($recent->have_posts()) : $recent->the_post();?>
             <a href="<?php the_permalink() ?>" rel="bookmark">
               <?php the_title(); ?>
             </a>
             <?php endwhile; ?> 
 
             <h4>Season 2012/13 - Championship</h4>
-            <?php $recent = new WP_Query("cat=297&showposts=500"); while($recent->have_posts()) : $recent->the_post();?>
+            <?php $recent = new WP_Query ("season=2012/13&showposts=500"); while($recent->have_posts()) : $recent->the_post();?>
             <a href="<?php the_permalink() ?>" rel="bookmark">
               <?php the_title(); ?>
             </a>
             <?php endwhile; ?> 
 
             <h4>Season 2011/12 - Championship</h4>
-            <?php $recent = new WP_Query("cat=298&showposts=500"); while($recent->have_posts()) : $recent->the_post();?>
+            <?php $recent = new WP_Query ("season=2011/12&showposts=500"); while($recent->have_posts()) : $recent->the_post();?>
             <a href="<?php the_permalink() ?>" rel="bookmark">
               <?php the_title(); ?>
             </a>
             <?php endwhile; ?> 
 
             <h4>Season 2010/11 - Premier League</h4>
-            <?php $recent = new WP_Query("cat=258&showposts=500"); while($recent->have_posts()) : $recent->the_post();?>
+            <?php $recent = new WP_Query ("season=2010/11&showposts=500"); while($recent->have_posts()) : $recent->the_post();?>
             <a href="<?php the_permalink() ?>" rel="bookmark">
               <?php the_title(); ?>
             </a>
