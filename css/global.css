@@ -1536,7 +1536,7 @@ section article .module {
   position: relative;
 }
 
-/* line 64, ../sass/sections/_single.scss */
+/* line 65, ../sass/sections/_single.scss */
 .social-share {
   position: absolute;
   bottom: 0;
@@ -1544,17 +1544,17 @@ section article .module {
   background: rgba(255, 255, 255, 0.9);
   padding: 4px 4px 0 0;
 }
-/* line 70, ../sass/sections/_single.scss */
+/* line 71, ../sass/sections/_single.scss */
 .social-share a {
   text-decoration: none;
 }
 
-/* line 75, ../sass/sections/_single.scss */
+/* line 76, ../sass/sections/_single.scss */
 article {
   position: relative;
   padding-top: 20px;
 }
-/* line 78, ../sass/sections/_single.scss */
+/* line 79, ../sass/sections/_single.scss */
 article .powerpress_player {
   border-top: 1px solid white;
   background: #c8c8c8;
@@ -1564,20 +1564,20 @@ article .powerpress_player {
   position: relative;
   top: 50%;
 }
-/* line 87, ../sass/sections/_single.scss */
+/* line 88, ../sass/sections/_single.scss */
 article .wp-post-image {
   width: 100%;
 }
-/* line 90, ../sass/sections/_single.scss */
+/* line 91, ../sass/sections/_single.scss */
 article .related-posts img {
   width: auto;
 }
-/* line 93, ../sass/sections/_single.scss */
+/* line 94, ../sass/sections/_single.scss */
 article .powerpress-mejs-audio {
   margin: 0 auto;
   width: 100%;
 }
-/* line 97, ../sass/sections/_single.scss */
+/* line 98, ../sass/sections/_single.scss */
 article .powerpress_links {
   font-size: 12px;
   font-size: 1.2rem;
@@ -1587,22 +1587,22 @@ article .powerpress_links {
   padding: 4px 8px;
   text-transform: uppercase;
 }
-/* line 104, ../sass/sections/_single.scss */
+/* line 105, ../sass/sections/_single.scss */
 article .powerpress_links a {
   color: #222222;
   text-decoration: bold;
 }
-/* line 106, ../sass/sections/_single.scss */
+/* line 107, ../sass/sections/_single.scss */
 article .powerpress_links a:hover {
   color: #00aaff;
 }
-/* line 110, ../sass/sections/_single.scss */
+/* line 111, ../sass/sections/_single.scss */
 article .sub-nav {
   padding: 0;
   background: none;
   font-size: 0;
 }
-/* line 114, ../sass/sections/_single.scss */
+/* line 115, ../sass/sections/_single.scss */
 article .sub-nav a {
   padding: 5px;
   background: #737373;
@@ -1614,7 +1614,7 @@ article .sub-nav a {
   color: #e1e1e1;
   display: block;
 }
-/* line 126, ../sass/sections/_single.scss */
+/* line 127, ../sass/sections/_single.scss */
 article .match figure {
   padding: 8px;
   background: #ffddbb;
@@ -1623,7 +1623,7 @@ article .match figure {
   display: inline-block;
   margin-top: 20px;
 }
-/* line 133, ../sass/sections/_single.scss */
+/* line 134, ../sass/sections/_single.scss */
 article .match figure figcaption {
   font-weight: bold;
   color: #a65300;
@@ -1632,12 +1632,12 @@ article .match figure figcaption {
   font-size: 1.4rem;
   padding: 20px 0 0 0;
 }
-/* line 142, ../sass/sections/_single.scss */
+/* line 143, ../sass/sections/_single.scss */
 article header {
   position: relative;
   margin-top: 2%;
 }
-/* line 146, ../sass/sections/_single.scss */
+/* line 147, ../sass/sections/_single.scss */
 article h1, article a.latest {
   font-family: 'Roboto Condensed', sans-serif;
   text-decoration: none;
@@ -1656,39 +1656,39 @@ article h1, article a.latest {
   transition: background, 0.2s ease !important;
 }
 @media (min-width: 480px) {
-  /* line 146, ../sass/sections/_single.scss */
+  /* line 147, ../sass/sections/_single.scss */
   article h1, article a.latest {
     font-size: 24px;
     font-size: 2.4rem;
   }
 }
 @media (min-width: 768px) {
-  /* line 146, ../sass/sections/_single.scss */
+  /* line 147, ../sass/sections/_single.scss */
   article h1, article a.latest {
     font-size: 30px;
     font-size: 3rem;
   }
 }
-/* line 166, ../sass/sections/_single.scss */
+/* line 167, ../sass/sections/_single.scss */
 article h3 span {
   font-weight: normal;
   margin-left: 10px;
 }
-/* line 169, ../sass/sections/_single.scss */
+/* line 170, ../sass/sections/_single.scss */
 article h3 span[data-icon="T"] {
   font-size: 35px;
   font-size: 3.5rem;
 }
-/* line 174, ../sass/sections/_single.scss */
+/* line 175, ../sass/sections/_single.scss */
 article h4 {
   font-size: 22px;
   font-size: 2.2rem;
 }
-/* line 177, ../sass/sections/_single.scss */
+/* line 178, ../sass/sections/_single.scss */
 article img {
   margin-bottom: 0;
 }
-/* line 180, ../sass/sections/_single.scss */
+/* line 181, ../sass/sections/_single.scss */
 article .meta {
   margin-top: 6%;
   font-weight: bold;
@@ -1698,29 +1698,29 @@ article .meta {
   font-size: 1.6rem;
 }
 @media (min-width: 480px) {
-  /* line 180, ../sass/sections/_single.scss */
+  /* line 181, ../sass/sections/_single.scss */
   article .meta {
     font-size: 12px;
     font-size: 1.2rem;
   }
 }
 @media (min-width: 1024px) {
-  /* line 180, ../sass/sections/_single.scss */
+  /* line 181, ../sass/sections/_single.scss */
   article .meta {
     font-size: 16px;
     font-size: 1.6rem;
   }
 }
-/* line 188, ../sass/sections/_single.scss */
+/* line 189, ../sass/sections/_single.scss */
 article .meta time {
   margin-right: 20px;
 }
-/* line 191, ../sass/sections/_single.scss */
+/* line 192, ../sass/sections/_single.scss */
 article .meta span {
   margin-right: 6.66667px;
   font-weight: normal;
 }
-/* line 195, ../sass/sections/_single.scss */
+/* line 196, ../sass/sections/_single.scss */
 article .meta a {
   margin-right: 20px;
   color: inherit;
@@ -1728,22 +1728,22 @@ article .meta a {
   text-decoration: none;
   font-size: inherit;
 }
-/* line 202, ../sass/sections/_single.scss */
+/* line 203, ../sass/sections/_single.scss */
 article .meta a:hover {
   text-decoration: underline;
 }
 
-/* line 207, ../sass/sections/_single.scss */
+/* line 208, ../sass/sections/_single.scss */
 .filter-nav {
   padding-top: 0;
   padding-bottom: 20px;
 }
-/* line 210, ../sass/sections/_single.scss */
+/* line 211, ../sass/sections/_single.scss */
 .filter-nav a {
   display: block;
   text-align: center;
 }
-/* line 213, ../sass/sections/_single.scss */
+/* line 214, ../sass/sections/_single.scss */
 .filter-nav a.show-hide-nav {
   background: gray;
   color: #FFF;
@@ -1751,19 +1751,19 @@ article .meta a:hover {
   font-size: 2.4rem;
   padding: 0;
 }
-/* line 220, ../sass/sections/_single.scss */
+/* line 221, ../sass/sections/_single.scss */
 .filter-nav a:not(.show-hide-nav) {
   /*Hide all filter buttons except control button*/
   display: none;
 }
-/* line 222, ../sass/sections/_single.scss */
+/* line 223, ../sass/sections/_single.scss */
 body.show-filter-nav .filter-nav a:not(.show-hide-nav) {
   /*Show all filter buttons*/
   display: inline-block;
 }
 
-/* line 228, ../sass/sections/_single.scss */
-#related-posts figure {
+/* line 229, ../sass/sections/_single.scss */
+.yarpp-related figure {
   background: whitesmoke;
   width: 46.4%;
   display: inline-block;
@@ -1772,28 +1772,28 @@ body.show-filter-nav .filter-nav a:not(.show-hide-nav) {
   margin-bottom: 20px;
   margin-right: 20px;
 }
-/* line 236, ../sass/sections/_single.scss */
-#related-posts figure:nth-child(odd) {
+/* line 237, ../sass/sections/_single.scss */
+.yarpp-related figure:nth-child(odd) {
   margin-right: 0;
 }
 @media (min-width: 580px) {
-  /* line 228, ../sass/sections/_single.scss */
-  #related-posts figure {
+  /* line 229, ../sass/sections/_single.scss */
+  .yarpp-related figure {
     margin-right: 20px !important;
     width: 30%;
   }
-  /* line 242, ../sass/sections/_single.scss */
-  #related-posts figure:nth-child(3n+1) {
+  /* line 243, ../sass/sections/_single.scss */
+  .yarpp-related figure:nth-child(3n+1) {
     margin-right: 0 !important;
   }
 }
-/* line 247, ../sass/sections/_single.scss */
-#related-posts img {
+/* line 248, ../sass/sections/_single.scss */
+.yarpp-related img {
   width: 100%;
   position: relative;
 }
-/* line 251, ../sass/sections/_single.scss */
-#related-posts figcaption {
+/* line 252, ../sass/sections/_single.scss */
+.yarpp-related figcaption {
   font-size: 16px;
   font-size: 1.6rem;
   padding: 10px;
@@ -1803,37 +1803,37 @@ body.show-filter-nav .filter-nav a:not(.show-hide-nav) {
   position: relative;
   text-decoration: none;
 }
-/* line 253, ../sass/sections/_single.scss */
-#related-posts figcaption:hover {
+/* line 254, ../sass/sections/_single.scss */
+.yarpp-related figcaption:hover {
   background: #00aaff;
   -webkit-transition: 0.2s ease-in !important;
   -moz-transition: 0.2s ease-in !important;
   -o-transition: 0.2s ease-in !important;
   transition: 0.2s ease-in !important;
 }
-/* line 257, ../sass/sections/_single.scss */
-#related-posts figcaption:hover > span {
+/* line 258, ../sass/sections/_single.scss */
+.yarpp-related figcaption:hover > span {
   color: #00aaff;
   -webkit-transition: 0.2s ease-in !important;
   -moz-transition: 0.2s ease-in !important;
   -o-transition: 0.2s ease-in !important;
   transition: 0.2s ease-in !important;
 }
-/* line 261, ../sass/sections/_single.scss */
-#related-posts figcaption span {
+/* line 262, ../sass/sections/_single.scss */
+.yarpp-related figcaption span {
   position: absolute;
   top: -0.4em;
   color: #ff8000;
   font-size: 38px;
   font-size: 3.8rem;
 }
-/* line 268, ../sass/sections/_single.scss */
-#related-posts a {
+/* line 269, ../sass/sections/_single.scss */
+.yarpp-related a {
   text-decoration: none;
   line-height: 1.2em !important;
 }
 
-/* line 274, ../sass/sections/_single.scss */
+/* line 275, ../sass/sections/_single.scss */
 .prev-next a {
   font-size: 16px;
   font-size: 1.6rem;
@@ -1845,15 +1845,26 @@ body.show-filter-nav .filter-nav a:not(.show-hide-nav) {
   text-decoration: none;
   padding: 6.66667px;
 }
-/* line 278, ../sass/sections/_single.scss */
+/* line 279, ../sass/sections/_single.scss */
 .prev-next .prev {
   float: left;
   margin-bottom: 20px;
 }
-/* line 282, ../sass/sections/_single.scss */
+/* line 283, ../sass/sections/_single.scss */
 .prev-next .next {
   float: right;
   padding: 0;
+}
+
+/* line 288, ../sass/sections/_single.scss */
+.description {
+  margin: 20px 0;
+}
+
+/* Hack to fix YARPP double post bug on old post types*/
+/* line 292, ../sass/sections/_single.scss */
+.last-match + .yarpp-related, .yarpp-related + .yarpp-related {
+  display: none;
 }
 
 /* line 2, ../sass/sections/_page.scss */

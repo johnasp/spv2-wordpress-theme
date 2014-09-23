@@ -135,7 +135,7 @@ function my_get_posts( $query ) {
 	return $query;
 }
 
-// CPT declerations
+// CPT declerations.  Exported from CPT UI to provide support for YARPP
 
 add_action('init', 'cptui_register_my_cpt_video');
 function cptui_register_my_cpt_video() {
@@ -151,7 +151,7 @@ register_post_type('video', array(
 'hierarchical' => false,
 'rewrite' => array('slug' => 'video', 'with_front' => true),
 'query_var' => true,
-'supports' => array('title','editor','excerpt','trackbacks','custom-fields','comments','revisions','thumbnail','author','page-attributes','post-formats'),
+'supports' => array('title','editor','excerpt','thumbnail'),
 'labels' => array (
   'name' => 'Videos',
   'singular_name' => 'Video',
@@ -184,7 +184,7 @@ register_post_type('audio', array(
 'hierarchical' => false,
 'rewrite' => array('slug' => 'audio', 'with_front' => true),
 'query_var' => true,
-'supports' => array('title','editor','excerpt','trackbacks','custom-fields','comments','revisions','thumbnail','author','page-attributes','post-formats'),
+'supports' => array('title','editor','excerpt','thumbnail'),
 'labels' => array (
   'name' => 'Audio Clips',
   'singular_name' => 'Audio',
@@ -217,7 +217,8 @@ register_post_type('blog', array(
 'hierarchical' => false,
 'rewrite' => array('slug' => 'blog', 'with_front' => true),
 'query_var' => true,
-'supports' => array('title','editor','excerpt','trackbacks','custom-fields','comments','revisions','thumbnail','author','page-attributes','post-formats'),
+'supports' => array('title','excerpt','thumbnail'),
+'taxonomies' => array('post_tag','season'),
 'labels' => array (
   'name' => 'Blog',
   'singular_name' => 'blog',
@@ -250,7 +251,7 @@ register_post_type('podcast', array(
 'hierarchical' => false,
 'rewrite' => array('slug' => 'podcast', 'with_front' => true),
 'query_var' => true,
-'supports' => array('title','editor','excerpt','trackbacks','custom-fields','comments','revisions','thumbnail','author','page-attributes','post-formats'),
+'supports' => array('title','editor','excerpt','thumbnail'),
 'taxonomies' => array('post_tag','season'),
 'labels' => array (
   'name' => 'Podcasts',

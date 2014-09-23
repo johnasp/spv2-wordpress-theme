@@ -4,7 +4,7 @@
   <h2>Latest Podcasts</h2>
   <ul>
       <?php
-          $lastposts = get_posts('numberposts=10&orderby=date&cat=2');
+          $lastposts = get_posts('numberposts=10&orderby=date&post_type=podcast');
           foreach($lastposts as $post) :
           setup_postdata($post); ?>
 

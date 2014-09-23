@@ -60,6 +60,7 @@
 	header {
 		position: relative;
 	}
+
 }
 .social-share {
 	position: absolute;
@@ -224,7 +225,7 @@ article {
 		}
 	}
 }
-#related-posts {
+.yarpp-related {
 	figure {
 		background: lighten(#e1e1e1,8%);
 		width: 46.4%;
@@ -283,5 +284,12 @@ article {
 		float:right;
 		padding:0;
 	}
+}
+.description {
+	margin: $padding 0;
+}
+/* Hack to fix YARPP double post bug on old post types*/
+.last-match + .yarpp-related, .yarpp-related + .yarpp-related  {
+	display: none;
 }
 

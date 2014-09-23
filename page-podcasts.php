@@ -28,7 +28,7 @@ Template Name: Podcasts
           <section class="all-pods">
             
             <h4>Season 2014/15 - Championship</h4>
-            <?php $recent = new WP_Query("season=2014/15&showposts=500");; while($recent->have_posts()) : $recent->the_post();?>
+            <?php $recent = new WP_Query("season=2014/15  &showposts=500");; while($recent->have_posts()) : $recent->the_post();?>
             <a href="<?php the_permalink() ?>" rel="bookmark">
               <?php the_title(); ?>
             </a>

@@ -5,30 +5,28 @@
 
 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
-      <article id="single" class="module audio">  
-          <div class="post-meta" aria-hidden="true">
-           <?php the_date(); ?><span>Audio </span>
+      <article id="single" class="module blog">  
+          <div class="post-meta" aria-hidden="true"> 
+            <?php the_date(); ?><span>Blog </span>
           </div>
           <h1><?php the_title(); ?></h1> 
           <?php 
 
           the_post_thumbnail('full');
 
-          $audio = get_field("audio_description");
-          if (empty($audio)) {
+          $theBlog = get_field("blog_content");
+          if (empty($theBlog)) {
             the_content();
           } 
           else {
              echo '<div class="description">';
-             echo the_field('audio_description');
+             echo the_field('blog_content');
              echo '</div>';   
-             include(TEMPLATEPATH."/inc/adsense-body.php");
-             the_field('audio_embed_code');
           }
-
           ?>
+
           <?php include(TEMPLATEPATH."/inc/related-posts.php"); ?>
-          
+         
           <?php include(TEMPLATEPATH."/inc/post-bottom.php");?>
           
       </article>

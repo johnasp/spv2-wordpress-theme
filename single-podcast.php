@@ -7,8 +7,7 @@
 
       <article id="single" class="module podcast">  
       <div class="post-meta" aria-hidden="true" >
-        By <a href="http://seasiderspodcast.co.uk/about" rel="nofollow author">John Aspinall</a> 
-        on <?php the_date(); ?><span data-icon="G">Podcast </span>
+        <?php the_date(); ?><span data-icon="G">Podcast </span>
       </div>
      
       <?php      
@@ -33,7 +32,7 @@
 
           include(TEMPLATEPATH."/inc/related-posts.php"); 
 
-          the_tags( 'Tagged as ', ' ',  $after );
+          // the_tags( 'Tagged as ', ' ',  $after );
 
           include(TEMPLATEPATH."/inc/post-bottom.php");
       ?>
