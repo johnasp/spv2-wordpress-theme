@@ -23,6 +23,7 @@
              echo the_field('audio_description');
              echo '</div>';   
              include(TEMPLATEPATH."/inc/adsense-body.php");
+             echo '<p>Listen to the thoughts of the manager using the audio player below:</p>';
              the_field('audio_embed_code');
           }
 
