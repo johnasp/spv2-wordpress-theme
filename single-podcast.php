@@ -14,7 +14,7 @@
           include(TEMPLATEPATH."/inc/main.php");
           include(TEMPLATEPATH."/inc/last-match.php");
 
-          $tt = get_field("tangerinetopics");
+          $tt = get_field("tangerine_topics");
           if (empty($tt)) {
          
           } 

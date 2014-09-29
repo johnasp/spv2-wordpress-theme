@@ -270,4 +270,26 @@ register_post_type('podcast', array(
   'parent' => 'Parent Podcast',
 )
 ) ); }
+
+
+//CUSTOMISE WYSIWYG FOR ACF
+
+add_filter( 'acf/fields/wysiwyg/toolbars' , 'my_toolbars'  );
+function my_toolbars( $toolbars )
+{
+  // remove the 'Basic' toolbar completely
+  unset( $toolbars['Basic' ] );
+  
+  // Add a new toolbar called "Very Simple"
+  // - this toolbar has only 1 row of buttons
+  $toolbars['Bullets only'][1] = array(bullist, fullscreen);
+  $toolbars['Code only'][1] = array(code, fullscreen);
+  $toolbars['Bullets & bold'][1] = array(bullist, bold, fullscreen);
+  $toolbars['Most'][1] = array(bullist,bold,undo,redo,link,unlink,spellchecker,fullscreen,code);
+
+
+  // return $toolbars - IMPORTANT!
+  return $toolbars;
+}
+
 ?>

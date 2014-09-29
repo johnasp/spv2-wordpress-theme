@@ -8,8 +8,7 @@
 			margin-left:0;
 		}
 	}
-}
-    
+}  
 #cta { 
 	.listen-follow {
 		padding-top: $padding*2;
@@ -41,7 +40,6 @@
 		@include cta-block($rss);	
 	}
 }
-
 #donate {
 	padding-top: $padding;
 	border:2px solid #E39A46;

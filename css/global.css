@@ -1914,16 +1914,16 @@ body.wp-page header h1 {
   }
 }
 
-/* line 14, ../sass/sections/_cta.scss */
+/* line 13, ../sass/sections/_cta.scss */
 #cta .listen-follow {
   padding-top: 40px;
 }
-/* line 17, ../sass/sections/_cta.scss */
+/* line 16, ../sass/sections/_cta.scss */
 #cta p, #cta li {
   font-size: 14px;
   font-size: 1.4rem;
 }
-/* line 19, ../sass/sections/_cta.scss */
+/* line 18, ../sass/sections/_cta.scss */
 #cta .apple {
   background: #3c3c3c;
   border: 1px solid #555555;
@@ -1940,7 +1940,7 @@ body.wp-page header h1 {
   font-size: 16px;
   font-size: 1.6rem;
 }
-/* line 22, ../sass/sections/_cta.scss */
+/* line 21, ../sass/sections/_cta.scss */
 #cta .android {
   background: #719900;
   border: 1px solid #97cc00;
@@ -1957,7 +1957,7 @@ body.wp-page header h1 {
   font-size: 16px;
   font-size: 1.6rem;
 }
-/* line 25, ../sass/sections/_cta.scss */
+/* line 24, ../sass/sections/_cta.scss */
 #cta .blackberry {
   background: #023249;
   border: 1px solid #03547b;
@@ -1974,7 +1974,7 @@ body.wp-page header h1 {
   font-size: 16px;
   font-size: 1.6rem;
 }
-/* line 28, ../sass/sections/_cta.scss */
+/* line 27, ../sass/sections/_cta.scss */
 #cta .windows8 {
   background: #0076b2;
   border: 1px solid #0098e5;
@@ -1991,7 +1991,7 @@ body.wp-page header h1 {
   font-size: 16px;
   font-size: 1.6rem;
 }
-/* line 31, ../sass/sections/_cta.scss */
+/* line 30, ../sass/sections/_cta.scss */
 #cta .facebook {
   background: #37548e;
   border: 1px solid #456ab3;
@@ -2008,7 +2008,7 @@ body.wp-page header h1 {
   font-size: 16px;
   font-size: 1.6rem;
 }
-/* line 34, ../sass/sections/_cta.scss */
+/* line 33, ../sass/sections/_cta.scss */
 #cta .twitter {
   background: #03a6f1;
   border: 1px solid #2bbafc;
@@ -2025,7 +2025,7 @@ body.wp-page header h1 {
   font-size: 16px;
   font-size: 1.6rem;
 }
-/* line 37, ../sass/sections/_cta.scss */
+/* line 36, ../sass/sections/_cta.scss */
 #cta .google {
   background: red;
   border: 1px solid #ff3333;
@@ -2042,7 +2042,7 @@ body.wp-page header h1 {
   font-size: 16px;
   font-size: 1.6rem;
 }
-/* line 40, ../sass/sections/_cta.scss */
+/* line 39, ../sass/sections/_cta.scss */
 #cta .rss {
   background: #ff8000;
   border: 1px solid #ff9933;
@@ -2060,7 +2060,7 @@ body.wp-page header h1 {
   font-size: 1.6rem;
 }
 
-/* line 45, ../sass/sections/_cta.scss */
+/* line 43, ../sass/sections/_cta.scss */
 #donate {
   padding-top: 20px;
   border: 2px solid #E39A46;
@@ -2070,35 +2070,35 @@ body.wp-page header h1 {
   background-image: -o-linear-gradient(#faefaa 40%, #ffbe3a);
   background-image: linear-gradient(#faefaa 40%, #ffbe3a);
 }
-/* line 49, ../sass/sections/_cta.scss */
+/* line 47, ../sass/sections/_cta.scss */
 #donate h2 {
   margin-top: 0;
 }
-/* line 52, ../sass/sections/_cta.scss */
+/* line 50, ../sass/sections/_cta.scss */
 #donate form {
   text-align: center;
 }
-/* line 54, ../sass/sections/_cta.scss */
+/* line 52, ../sass/sections/_cta.scss */
 #donate form select {
   font-size: 14px;
   font-size: 1.4rem;
   font-family: 'open sans', serif;
   margin-bottom: 20px;
 }
-/* line 59, ../sass/sections/_cta.scss */
+/* line 57, ../sass/sections/_cta.scss */
 #donate form .pp-but {
   display: block;
   margin: 0 auto;
   margin-top: 6px;
 }
 
-/* line 67, ../sass/sections/_cta.scss */
+/* line 65, ../sass/sections/_cta.scss */
 #socialise {
   padding-top: 36px;
   padding-bottom: 0;
   font-size: 0;
 }
-/* line 71, ../sass/sections/_cta.scss */
+/* line 69, ../sass/sections/_cta.scss */
 #socialise a {
   display: inline-block;
   color: #FFF;
@@ -2116,17 +2116,17 @@ body.wp-page header h1 {
   width: 48%;
 }
 @media (min-width: 768px) {
-  /* line 71, ../sass/sections/_cta.scss */
+  /* line 69, ../sass/sections/_cta.scss */
   #socialise a {
     width: 100%;
     margin-right: 0;
   }
 }
-/* line 89, ../sass/sections/_cta.scss */
+/* line 87, ../sass/sections/_cta.scss */
 #socialise a:hover, #socialise a:focus {
   background: #00aaff;
 }
-/* line 93, ../sass/sections/_cta.scss */
+/* line 91, ../sass/sections/_cta.scss */
 #socialise span {
   font-weight: normal;
   font-size: 80px;
@@ -2143,7 +2143,7 @@ body.wp-page header h1 {
   transition: font-size 0.2s ease;
 }
 @media (min-width: 768px) {
-  /* line 93, ../sass/sections/_cta.scss */
+  /* line 91, ../sass/sections/_cta.scss */
   #socialise span {
     font-size: 65px;
     font-size: 6.5rem;
