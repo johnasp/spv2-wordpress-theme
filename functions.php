@@ -11,6 +11,19 @@ $post_data = get_post($post->ID, ARRAY_A);
 $slug = $post_data['post_name'];
 return $slug; }
 
+//SOCIAL SHARING HELPERS
+
+$HTTP = "http://";
+$URL = $_SERVER['SERVER_NAME'];
+$Path = $_SERVER['REQUEST_URI'];
+$URI = $HTTP.$URL.$Path;
+$PostTitle = $_SERVER['REQUEST_URI'];
+
+$PostTitle = str_replace ("-", " ", $PostTitle ); 
+$PostTitle = str_replace ("/", " ", $PostTitle );
+$PostTitle = ucwords($PostTitle);
+$PostTitle = "Have a listen to @seasiderspod ep.".$PostTitle;
+
 //PAGINAAAAAAATION
 
 if ( ! function_exists( 'my_pagination' ) ) :
@@ -46,19 +59,7 @@ return '
 
 add_shortcode('adsense', 'showads');
 
- 
 //Insert ads after second paragraph of single post content.
-
-$HTTP = "http://";
-$URL = $_SERVER['SERVER_NAME'];
-$Path = $_SERVER['REQUEST_URI'];
-$URI = $HTTP.$URL.$Path;
-$PostTitle = $_SERVER['REQUEST_URI'];
-
-$PostTitle = str_replace ("-", " ", $PostTitle ); 
-$PostTitle = str_replace ("/", " ", $PostTitle );
-$PostTitle = ucwords($PostTitle);
-$PostTitle = "Have a listen to @seasiderspod ep.".$PostTitle;
 
 add_filter( 'the_content', 'prefix_insert_post_ads' );
 
