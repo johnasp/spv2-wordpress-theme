@@ -1,5 +1,5 @@
 <footer class="grid-1 group">
-<div class="module">This site was lovingly hand coded and converted into a Wordpress theme by <a href="https://plus.google.com/+JohnAspinall73" rel="me">John Aspinall</a>. G+ the pod on <a href="https://plus.google.com/+SeasiderspodcastCoUk/" rel="publisher">Google+</a></div>
+<div class="module"> Want to advertise on this site?  Get in touch. <div>
 </footer>
     
 </div><!-- grid -->    
