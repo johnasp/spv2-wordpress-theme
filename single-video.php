@@ -20,10 +20,11 @@
             the_content();
           } 
           else {
+             echo '<div class="adsense">'; include(TEMPLATEPATH."/inc/adsense-body.php"); echo '</div>';
              echo '<div class="description">';
              echo the_field('video_description');
              echo '</div>';   
-             include(TEMPLATEPATH."/inc/adsense-body.php");
+             
              the_field('video_embed_code');
           }
           

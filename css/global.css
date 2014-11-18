@@ -1897,6 +1897,11 @@ body.wp-page header h1 {
   color: white;
 }
 
+/* line 28, ../sass/sections/_page.scss */
+.adsense {
+  margin-top: 24px;
+}
+
 /* line 1, ../sass/sections/_cta.scss */
 #cta-ad-250 {
   background: #FFF;

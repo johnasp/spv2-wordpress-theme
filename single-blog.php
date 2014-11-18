@@ -13,6 +13,8 @@
           <?php 
 
           the_post_thumbnail('full');
+          echo '<div class="adsense">'; include(TEMPLATEPATH."/inc/adsense-body.php"); echo '</div>';
+
 
           $theBlog = get_field("blog_content");
           if (empty($theBlog)) { //test for old blog post content
@@ -20,9 +22,7 @@
           } 
           else {
              echo '<div class="description">';
-             include(TEMPLATEPATH."/inc/adsense-body.php");
              echo the_field('blog_content');
-             include(TEMPLATEPATH."/inc/adsense-body.php");
              echo '</div>';   
           }
           ?>
